@@ -587,7 +587,7 @@ body div ul{
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: solid;
     margin:auto;
-    margin-top:  450px;
+    margin-top:  1450px;
     background-image: url(../media/background_img/jump-1822412.jpg);
 }
 
@@ -703,6 +703,19 @@ div form h1{
     font-weight: bold;
     color: #000000;
     cursor: pointer;
+}
+
+/*Media querys*/
+@media only screen and (max-width: 768px) { /*Mobile*/
+    header{
+        height: 20%; /*Agrego height*/
+    }
+    .des_grid{
+        padding-top: 180px;
+    }
+    #form{
+        width: 100%;
+    }
 }
 
 /*Tablet*/
