@@ -706,6 +706,18 @@ div form h1{
 }
 
 /*Media querys*/
+@media only screen and (max-width: 368px) { /*Mobile*/
+    header{
+        height: 22%; /*Agrego height*/
+    }
+    .des_grid{
+        padding-top: 200px;
+    }
+    #form{
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 768px) { /*Mobile*/
     header{
         height: 20%; /*Agrego height*/
