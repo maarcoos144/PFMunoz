@@ -1,0 +1,38 @@
+/*Clase con últimos resultados y próximos partidos.*/
+.resultados_y_partidos {
+    position: absolute;
+    top: 80%; 
+    right: 20%; 
+    height: 44.6%;
+    width: 13%;
+    /*background-color: #8cb6c7;*/ 
+    /*background-color: #146C94; */
+    padding: 0.5px;
+    /*border: 1px solid black;
+    border-radius: 10px;*/
+    /*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);*/ 
+    /*box-shadow: 5px 5px 5px 35px #146C94;*/  /*SINTAXIS: box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;*/ /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
+    margin-top: 33px; /*Bajo el rectángulo*/
+    background-image: url(/media/background_img/children-1822688.jpg);
+    box-shadow: 1px 1px 15px 5px #000000;
+    
+    /*border: solid;*/
+}
+
+.ryp_titulo{
+    color: #19A7CE;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    /*text-shadow: 3px 3px 3px #000000;*/
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+}
+
+body div ul{
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    list-style-type: none;
+}
+

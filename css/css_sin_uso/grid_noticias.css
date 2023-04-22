@@ -1,0 +1,99 @@
+.grid-container {
+    position: absolute; 
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 12px;
+    font-weight: bold;
+    width: 46%;
+    height: 45%;
+    left: 365px;
+    top: 83%; 
+    text-align: center;
+    padding-bottom: 100px; /* Agrega un padding de 100px al final del contenido. Esto para que el footer no tape el contenido del grid. */
+
+    box-shadow: 1px 1px 15px 5px #000000;
+    background-color: #146C94;
+    background-image: url(/media/background_img/children-1822688.jpg);
+}
+
+.grid-container div {
+    /*background-color: #8cb6c7;*/
+    border: 1% solid black;
+    border-radius: 1%;
+    color: rgb(0, 0, 0);
+    /*padding: 1rem;*/
+    width: 100%;
+    text-align: left;
+}
+
+.grid_text_abajo{
+    font-size: 14px;
+    grid-area: 2/1/3/4; /* Definimos la posición del texto */
+    text-align: center;
+}
+
+
+/*En este ejemplo, cada imagen y su respectivo texto están envueltos dentro de un div con la clase .grid-item. 
+Luego, se define un grid dentro de cada div utilizando la propiedad display: grid, donde la primera fila es para la imagen 
+y la segunda para el texto. Para posicionar cada div, se utiliza la pseudo-clase nth-child, donde se especifica el índice de cada div
+dentro del grid y se definen las filas y columnas que debe ocupar utilizando las propiedades grid-row y grid-column.*/
+
+.grid-item {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-left: 22px; 
+    margin-bottom: 25px;
+}
+
+.grid-item:hover{
+    cursor: pointer;
+}
+
+  /* Definimos la posición de cada div dentro del grid */
+.grid-item:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+} 
+
+.grid-item:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.grid-item:nth-child(3) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+  /* Agrega un elemento div con la clase "text-left" en cada celda de la primera columna */
+.grid-container div:nth-child(3n-2) {
+    position: relative;
+}
+
+.grid-container div:nth-child(3n-2) .text_left {
+    position: absolute;
+    top: 50%;
+    left: -90px; /*Acomodo posición de la primer columna.*/
+    transform: translateY(-50%);
+}
+
+.grid-container div:nth-child(3n-2) .text_left_two {
+    position: absolute;
+    top: 60%;
+    left: -90px; /*Acomodo posición de la primer columna.*/
+    transform: translateY(-50%);
+}
+
+/* Estilo para la clase "text-left" */
+.text_left {
+    font-size: 16px;
+}
+
+.text_left_two {
+    font-size: 16px;
+}
+

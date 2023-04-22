@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <link rel="stylesheet" href="/bootstrap/bootstrap.css"> Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--script src="/bootstrap/bootstrap.js"></script-->         <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/estilos.css"> 
+    <title>MMz noticias</title>
+</head>
+<body>
+    <header>
+        <!--h1 class="titulo">LO ÚLTIMO DEL FÚTBOL EUROPEO</h1-->
+        <a href="../index.html" class="titulo"><h1>LO ÚLTIMO DEL FÚTBOL EUROPEO - </h1></a>
+        <a href="./uel.html" class="titulo"><h2>UEL</h2></a>
+        <nav id="header_links">
+            <ul>
+                <li><a href="./jornadas.html" target="_blank"><strong>Jornadas</strong></a></li>
+                <li><a href="./posiciones.html" target="_blank"><strong>Fase de grupos</strong></a></li>
+                <li><a href="./goleadores.html" target="_blank"><strong>Goleadores</strong></a></li>
+                <li><a href="./asistentes.html" target="_blank"><strong>Asistentes</strong></a></li>
+                <li class="separator"></li>
+                <li><a href="#contacto"><strong>Contacto</strong></a></li>
+                <li><a href="./desarrollador.html"><strong>Desarrollador</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Slideshow contenedor -->
+    <div class="slideshow-container">
+
+        <!-- Imagenes con número y caption-->
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="../media/ucl/img/uefa_champions_league_2022_23_quarter-finals_semi-finals_draw.jpg" style="width:100%"> <!--Agrego borde class="imagen_con_borde"-->  <!--class="imagen_redondada"-->
+        <div class="text">Se sortean los cuartos de final de la UCL</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="../media/uel/img/fbl-eur-c3-draw.jpg" style="width:100%" >  <!--class="imagen_redondada"-->
+        <div class="text">Se sortean los cuartos de final de la UEL</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="../media/pl/img/dan-burn-nottingham-forest.jpg" style="width:100%">  <!--class="imagen_redondada"-->
+        <div class="text">Newcastle United vence al Nottingham forest sobre la hora</div>
+        </div>
+
+        <!--Automatic slideshow-->
+        <script src="../js/automatic_slideshow.js"></script>   
+        <!--Fin-Automatic slideshow-->
+    </div>
+    <br>
+    <div>
+        <div class="grid-container">
+            <div class="grid-item zoom"> 
+                <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+                <div class="grid_text_abajo">Texto de la primera imagen</div>
+            </div>
+            <div class="grid-item zoom">
+                <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+                <div class="grid_text_abajo">Texto de la primera imagen</div>
+            </div>
+            <div class="grid-item zoom">
+                <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+                <div class="grid_text_abajo">Texto de la primera imagen</div>
+            </div>
+
+            <div class="grid-item zoom">
+                <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+                <div class="grid_text_abajo">Texto de la primera imagen</div>
+            </div>
+            <div class="grid-item zoom">
+                <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+                <div class="grid_text_abajo">Texto de la primera imagen</div>
+            </div>
+            <div class="grid-item zoom">
+                <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+                <div class="grid_text_abajo">Texto de la primera imagen</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid_league-container">
+        <div class="grid_league-item zoom" id="pl">
+            <div class="text_left"><strong>Roma</strong></div>
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+        <div class="grid_league-item zoom">
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+        <div class="grid_league-item zoom">
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+
+        <div class="grid_league-item zoom" id="la_liga">
+            <div class="text_left"><strong>Manchester</strong></div>
+            <div class="text_left_two"><strong>United</strong></div>
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+        <div class="grid_league-item zoom">
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+        <div class="grid_league-item zoom">
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+
+        <div class="grid_league-item zoom"  id="ucl">
+            <div class="text_left"><strong>Sevilla</strong></div>
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+        <div class="grid_league-item zoom">
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+        <div class="grid_league-item zoom">
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+
+        <div class="grid_league-item zoom"  id="uel">
+            <div class="text_left"><strong>Sporting</strong></div>
+            <div class="text_left_two"><strong>Lisboa</strong></div>
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+        <div class="grid_league-item zoom">
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+        <div class="grid_league-item zoom">
+            <img src="../media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
+            <div class="grid_text_abajo">Texto de la primera imagen</div>
+        </div>
+    </div>     
+            
+    <div class="resultados_y_partidos"> 
+        <h2 class="ryp_titulo">Resultados</h2>
+        <ul>
+            <li>Equipo 1 - 2 Equipo 2</li>
+            <li>Equipo 3 - 1 Equipo 4</li>
+            <li>Equipo 5 - 0 Equipo 6</li>
+        </ul>
+        <h2 class="ryp_titulo">Próximos partidos</h2>
+        <ul>
+            <li>Equipo 1 vs. Equipo 3</li>
+            <li>Equipo 2 vs. Equipo 5</li>
+            <li>Equipo 4 vs. Equipo 6</li>
+        </ul>
+    </div>
+
+    <div id="contacto">
+        <div> 
+            <form id="form">
+                <h1>CONTACTO</h1>
+                <br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" required="true" placeholder="Introduzca su nombre">
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" required="true" placeholder="Introduzca su apellido">
+                <br>
+                <label for="mail">Mail:</label>
+                <input type="email" required="true" placeholder="Introduzca su mail">
+                <br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea placeholder="Deje aquí su comentario"></textarea>
+
+                <br>
+                <input type="submit" class="submit_button" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <a href="https://walink.co/f9f87c" class="whatsapp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <footer>
+        <div>
+            <p>Todos los derechos reservados ©</p>
+        <div>
+    </footer>
+</body>
+</html>

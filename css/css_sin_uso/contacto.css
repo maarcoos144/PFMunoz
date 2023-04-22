@@ -1,0 +1,87 @@
+#form{
+    color: #19A7CE;
+    background-color: #F6F1F1;
+    font-size: 16px;
+    padding: 5px;         /*El padding de un elemento es la cantidad de espacio entre el borde y el contenido del elemento*/
+    text-align: center;
+    width: 40%;
+    height: 505px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: solid;
+    margin:auto;
+    margin-top:  1420px;
+    background-image: url(/media/background_img/jump-1822412.jpg);
+}
+
+#form h1{
+    color: #19A7CE;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 0 0 #030303, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+}
+
+#contacto{
+    background-color: #146C94;
+    height: 555px;
+    box-shadow: 1px 1px 15px 5px #000000; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
+    background-image: url(/media/background_img/jump-1822412.jpg);
+}
+
+label{
+    display: block; 
+    float: center;  
+    font-weight: bold;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+}
+
+div form textarea{
+    margin-left: 50px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #19A7CE; 
+    width: 80%; 
+    height: 150px; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+    margin-left: auto; /*Centrado*/
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div form input{
+    border-radius: 5px;  
+    border-style: solid; 
+    margin-left: 50px;
+    font-size: 16px;
+    width: 80%;
+    margin-left: auto; /*Centrado*/
+    font-weight: bold;
+}
+
+.submit_button{
+    color: #19A7CE;
+    padding: 1%;
+    width: 20%;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+    margin-left: auto; /*Centrado*/
+}
+
+.submit_button:hover{
+    color: #19A7CE;
+    background-color: black;
+}
+
+div form h1{
+    color: black;
+    text-shadow: 3px 3px 3px #F6F1F1;
+}
+

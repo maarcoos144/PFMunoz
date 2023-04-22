@@ -1,0 +1,31 @@
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 10px;
+    color: #19A7CE;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: -1400px;
+}
+
+body table thead tr th {
+	background-color: #F6F1F1;
+}
+
+body h3 {
+	margin-top: 100px;
+	color: #19A7CE;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    /*text-shadow: 3px 3px 3px #000000;*/
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+}
+
+
+
+
+
+
+

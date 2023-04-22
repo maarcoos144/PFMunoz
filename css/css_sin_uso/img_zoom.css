@@ -1,0 +1,10 @@
+/*Realizo transición suave de la imagen*/
+.zoom {
+    transition: transform .5s;
+}
+
+/*Doy zoom a las imagenes*/
+.zoom:hover {
+    transform: scale(1.1);
+}
+

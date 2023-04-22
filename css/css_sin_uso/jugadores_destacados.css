@@ -1,0 +1,55 @@
+#jugadores_destacados{
+    display: flex;
+    /*flex-direction: row;*/ /*Por default*/
+    /*flex-wrap: wrap;*/
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    /*border: 20px solid;*/
+    margin-top: 210px;
+    width:100%;
+    text-align: center;
+    margin-bottom: -1400px;
+    row-gap: 125px;
+}
+
+.jugador{
+    display: flex;
+    color: black;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    margin: 1px; /*Me sirvió para achicar el espacio entre items*/
+    margin-top: -75px;
+}
+
+.jugador_text{
+    text-align: center;
+    font-weight: bold;
+    color: #19A7CE;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+}
+
+.jugador:hover, .jugador_text:hover{
+    cursor: pointer;
+}
+
+.jugador_text_desc{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /*transición*/
+    border: 10px solid;
+    background-color: #19A7CE;
+    font-weight: bold;
+}
+
+.jugador:hover .jugador_text_desc,
+.jugador_text:hover .jugador_text_desc{
+    opacity: 1;
+    /*
+    .jugador:hover .jugador_text_desc: Esta regla aplica un estilo al elemento con la clase .jugador_text_desc cuando se pasa el mouse por 
+    encima del elemento con la clase .jugador. Esto significa que cuando el mouse está sobre
+    el contenedor con la clase .jugador, se cambia la opacidad del elemento con la clase .jugador_text_desc a 1, lo que lo hace visible.
+    */
+} 
+

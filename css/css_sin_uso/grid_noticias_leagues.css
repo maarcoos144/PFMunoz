@@ -1,0 +1,117 @@
+/*Utilizo este grid para mostrar noticias de distintas ligas en pantalla principal, y también para mostrar
+noticias específicas de cada liga en particular. Las propiedades son las mismas.*/
+
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;*/
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;/* /**Por defecto*/
+    /*font-family: Georgia, 'Times New Roman', Times, serif;
+}*/
+
+.grid_league-container {
+    position: absolute; 
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 12px;
+    font-weight: bold;
+    /*width: 48%;*/
+    width: 61%;
+    height: 108%;
+    left: 365px;
+    top: 130%; 
+    text-align: center;
+    padding-bottom: 100px; /* Agrega un padding de 100px al final del contenido. Esto para que el footer no tape el contenido del grid. */
+
+    box-shadow: 1px 1px 15px 5px #000000;
+    background-color: #146C94;
+    background-image: url(/media/background_img/children-1822688.jpg);
+}
+
+.grid_league-container div {
+    /*border: 1% solid black;*/
+    border-radius: 1%;
+    width: 100%;
+    text-align: left;
+}
+
+.grid_text_abajo{
+    font-size: 14px;
+    grid-area: 2/1/3/4; /* Definimos la posición del texto */
+    text-align: center;
+    color: #000;
+}
+
+
+/*En este ejemplo, cada imagen y su respectivo texto están envueltos dentro de un div con la clase .grid-item. 
+Luego, se define un grid dentro de cada div utilizando la propiedad display: grid, donde la primera fila es para la imagen 
+y la segunda para el texto. Para posicionar cada div, se utiliza la pseudo-clase nth-child, donde se especifica el índice de cada div
+dentro del grid y se definen las filas y columnas que debe ocupar utilizando las propiedades grid-row y grid-column.*/
+
+.grid_league-item {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-left: 22px; /*Le doy margen para centrar los elementos dentro del grid.*/
+    margin-bottom: 20px;
+}
+
+.grid_league-item:hover{
+    cursor: pointer;
+}
+
+  /* Definimos la posición de cada div dentro del grid */
+.grid_league-item:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+} 
+
+.grid_league-item:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.grid_league-item:nth-child(3) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+  /* Agrega un elemento div con la clase "text-left" en cada celda de la primera columna */
+.grid_league-container div:nth-child(3n-2) {
+    position: relative;
+}
+
+.grid_league-container div:nth-child(3n-2) .text_left {
+    position: absolute;
+    top: 50%;
+    left: -150px; /*Acomodo posición de la primer columna.*/
+    transform: translateY(-50%);
+}
+
+.grid_league-container div:nth-child(3n-2) .text_left_two {
+    position: absolute;
+    top: 60%;
+    left: -150px; /*Acomodo posición de la primer columna.*/
+    transform: translateY(-50%);
+}
+
+/* Estilo para la clase "text-left" */
+.text_left {
+    color: #19A7CE;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+    font-size: 16px;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+    font-weight: bold;
+}
+
+.text_left_two {
+    color: #19A7CE;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+    font-size: 16px;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+    font-weight: bold;
+}
+
