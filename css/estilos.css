@@ -708,10 +708,10 @@ div form h1{
 /*Media querys*/
 @media screen and (max-width: 576px) { /*Mobile*/
     header{
-        height: 15%; /*Agrego height*/
+        height: 20%; /*Agrego height*/
     }
     .des_grid{
-        padding-top: 250px;
+        margin-top: 150px;
     }
     #form{
         width: 100%;
@@ -724,7 +724,7 @@ div form h1{
         height: 15%; /*Agrego height*/
     }
     .des_grid{
-        padding-top: 180px;
+        margin-top: 180px;
     }
     #form{
         width: 100%;
@@ -737,7 +737,7 @@ div form h1{
         height: 15%; /*Agrego height*/
     }
     .des_grid{
-        padding-top: 180px;
+        margin-top: 180px;
     }
     #form{
         width: 100%;
@@ -753,7 +753,7 @@ div form h1{
         height: 15%; /*Agrego height*/
     }
     .des_grid{
-        padding-top: 180px;
+        margin-top: 180px;
     }
     #form{
         width: 100%;
