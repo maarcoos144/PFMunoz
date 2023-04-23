@@ -516,23 +516,25 @@ body h3 {
     cursor: pointer;
 }
 
-.jugador_text_desc{
+/*Se comenta la descripcoón del jugador porque no lo puedo hacer funcionar bien*/
+/* .jugador_text_desc{
     opacity: 0;
-    transition: opacity 0.3s ease-in-out; /*transición*/
+    transition: opacity 0.3s ease-in-out; 
     border: 10px solid;
     background-color: #19A7CE;
     font-weight: bold;
-}
+} */
 
-.jugador:hover .jugador_text_desc,
+/* .jugador:hover .jugador_text_desc,
 .jugador_text:hover .jugador_text_desc{
-    opacity: 1;
+    opacity: 1; */
     /*
     .jugador:hover .jugador_text_desc: Esta regla aplica un estilo al elemento con la clase .jugador_text_desc cuando se pasa el mouse por 
     encima del elemento con la clase .jugador. Esto significa que cuando el mouse está sobre
     el contenedor con la clase .jugador, se cambia la opacidad del elemento con la clase .jugador_text_desc a 1, lo que lo hace visible.
     */
-} 
+/* }  
+/*Fin - Se comenta la descripcoón del jugador porque no lo puedo hacer funcionar bien*/
 /*Fin - Jugadores destacados*/
 
 /*Resultados y partidos*/
@@ -712,7 +714,10 @@ div form h1{
         height: 20%; /*Agrego height*/
     }
     body header a h1{ /*Para el título*/
-        font-size: 25px;
+        font-size: 16px;
+    }
+    #header_links a{
+        font-size: 10px;
     }
     .des_grid{
         margin-top: 150px;
@@ -727,7 +732,10 @@ div form h1{
         height: 15%; /*Agrego height*/
     }
     body header a h1{ /*Para el título*/
-        font-size: 30px;
+        font-size: 20px;
+    }
+    #header_links a{
+        font-size: 12px;
     }
     .des_grid{
         margin-top: 180px;
