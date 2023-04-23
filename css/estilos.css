@@ -711,13 +711,13 @@ div form h1{
 /*Media querys*/
 @media screen and (max-width: 368px) { /*Mobile*/
     header{
-        height: 22%; /*Agrego height*/
+        height: 21%; /*Agrego height*/
     }
     body header a h1, body header a h2{ /*Para el título*/
-        font-size: 14px;
+        font-size: 13px;
     }
     #header_links a{
-        font-size: 8px;
+        font-size: 7px;
     }
     .des_grid{
         margin-top: 150px;
