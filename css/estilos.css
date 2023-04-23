@@ -706,21 +706,51 @@ div form h1{
 }
 
 /*Media querys*/
-@media only screen and (max-width: 368px) { /*Mobile*/
+@media screen and (max-width: 576px) { /*Mobile*/
     header{
-        height: 22%; /*Agrego height*/
+        height: 15%; /*Agrego height*/
     }
     .des_grid{
-        padding-top: 200px;
+        padding-top: 250px;
     }
     #form{
         width: 100%;
+        margin-bottom: 60px;
     }
 }
 
-@media only screen and (max-width: 768px) { /*Mobile*/
+@media screen and (min-width: 577px) and (max-width: 768px){ /*Tablets en vertical*/
     header{
-        height: 20%; /*Agrego height*/
+        height: 15%; /*Agrego height*/
+    }
+    .des_grid{
+        padding-top: 180px;
+    }
+    #form{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){ /*Tablets en horizontal*/
+    header{
+        height: 15%; /*Agrego height*/
+    }
+    .des_grid{
+        padding-top: 180px;
+    }
+    #form{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 993px){ /*Escritorio*/
+    .titulo{
+        font-size: 8px;
+    }
+    header{
+        height: 15%; /*Agrego height*/
     }
     .des_grid{
         padding-top: 180px;
