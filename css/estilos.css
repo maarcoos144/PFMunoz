@@ -588,7 +588,7 @@ body div ul{
     border: solid;
     margin:auto;
     margin-top:  1450px;
-    margin-bottom:  50px;
+    margin-bottom:  60px;
     background-image: url(../media/background_img/jump-1822412.jpg);
 }
 
@@ -602,7 +602,7 @@ body div ul{
 }
 
 #contacto{
-    background-color: #146C94;
+    /* background-color: #146C94; */
     height: 555px;
     box-shadow: 1px 1px 15px 5px #000000; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
     background-image: url(../media/background_img/jump-1822412.jpg);
@@ -679,8 +679,8 @@ div form h1{
     border-radius: 1%;
     width: 100%;
     color: rgb(0, 0, 0);
-    /*padding: 1rem;*/
-    padding-top: 120px;
+    padding-top: 10px;
+    margin-top: 120px;
     margin-bottom: -1400px; /*Quito espacio del grid para que "Contacto" se suba. Aplico esto en todas los html.*/
 }
 
@@ -693,7 +693,7 @@ div form h1{
     height: 100%; /* La altura ocupa el alto completo del contenedor */
     /* object-fit: cover;*/
     cursor: pointer;
-    box-shadow: 1px 1px 1000px 100px #19A7CE;
+    box-shadow: 1px 1px 1000px 30px #19A7CE; 
     border-radius: 50%;
     border: solid;
     border-color: #000000;
@@ -719,7 +719,6 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-bottom: 60px;
     }
 }
 
@@ -735,7 +734,6 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-bottom: 60px;
     }
 }
 
@@ -745,10 +743,6 @@ div form h1{
     }
     .des_grid{
         margin-top: 180px;
-    }
-    #form{
-        /* width: 100%; */
-        margin-bottom: 60px;
     }
 }
 
