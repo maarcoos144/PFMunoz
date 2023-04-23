@@ -47,7 +47,7 @@ header {
 #header_links a{
     color: #19A7CE;
     font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
-    font-size: 16x;
+    font-size: 16px;
     text-align: center;
     font-weight: bold;
     /*text-shadow: 3px 3px 3px #000000;*/
@@ -588,6 +588,7 @@ body div ul{
     border: solid;
     margin:auto;
     margin-top:  1450px;
+    margin-bottom:  50px;
     background-image: url(../media/background_img/jump-1822412.jpg);
 }
 
@@ -710,6 +711,9 @@ div form h1{
     header{
         height: 20%; /*Agrego height*/
     }
+    body header a h1{ /*Para el título*/
+        font-size: 25px;
+    }
     .des_grid{
         margin-top: 150px;
     }
@@ -722,6 +726,9 @@ div form h1{
 @media screen and (min-width: 577px) and (max-width: 768px){ /*Tablets en vertical*/
     header{
         height: 15%; /*Agrego height*/
+    }
+    body header a h1{ /*Para el título*/
+        font-size: 30px;
     }
     .des_grid{
         margin-top: 180px;
@@ -740,23 +747,8 @@ div form h1{
         margin-top: 180px;
     }
     #form{
-        width: 100%;
+        /* width: 100%; */
         margin-bottom: 60px;
-    }
-}
-
-@media screen and (min-width: 993px){ /*Escritorio*/
-    .titulo{
-        font-size: 8px;
-    }
-    header{
-        height: 15%; /*Agrego height*/
-    }
-    .des_grid{
-        margin-top: 180px;
-    }
-    #form{
-        width: 100%;
     }
 }
 
