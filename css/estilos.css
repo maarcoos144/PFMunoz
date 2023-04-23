@@ -711,7 +711,7 @@ div form h1{
 /*Media querys*/
 @media screen and (max-width: 368px) { /*Mobile*/
     header{
-        height: 18%; /*Agrego height*/
+        height: 22%; /*Agrego height*/
     }
     body header a h1, body header a h2{ /*Para el título*/
         font-size: 14px;
