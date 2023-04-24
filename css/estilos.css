@@ -738,6 +738,9 @@ div form h1{
     table{
         font-size: 7px;
     }
+    body h3 {
+        font-size: 9px;
+    }
     #form{
         width: 100%;
     }
@@ -760,6 +763,9 @@ div form h1{
     }
     table{
         font-size: 9px;
+    }
+    body h3 {
+        font-size: 11px;
     }
     #form{
         width: 100%;
@@ -785,6 +791,9 @@ div form h1{
     table{
         font-size: 11px;
     }
+    body h3 {
+        font-size: 13px;
+    }
     #form{
         width: 100%;
     }
@@ -802,6 +811,9 @@ div form h1{
     }
     table{
         font-size: 13px;
+    }
+    body h3 {
+        font-size: 15px;
     }
 }
 
