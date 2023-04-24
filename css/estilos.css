@@ -431,6 +431,16 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 /*Fin Grid Leagues*/
 
 /*PL Posiciones*/
+.tabla_posiciones{
+    width: 40%;
+    /*centrado*/
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    font-size: 16px;
+}
+
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
@@ -445,6 +455,8 @@ body table thead tr th {
 	background-color: #F6F1F1;
     text-align: center;
 }
+
+
 
 body h3 {
 	margin-top: 100px;
@@ -483,7 +495,7 @@ body h3 {
     display: flex;
     /*flex-direction: row;*/ /*Por default*/
     /*flex-wrap: wrap;*/
-    flex-flow: row wrap;
+    flex-flow: row wrap; /*Ayudo al resonsive.*/
     justify-content: space-around;
     align-items: center;
     /*border: 20px solid;*/
@@ -722,6 +734,12 @@ div form h1{
     .des_grid{
         margin-top: 150px;
     }
+    .tabla_posiciones{
+        width: 100%;
+    }
+    table{
+        font-size: 7px;
+    }
     #form{
         width: 100%;
     }
@@ -738,6 +756,12 @@ div form h1{
     }
     .des_grid{
         margin-top: 150px;
+    }
+    .tabla_posiciones{
+        width: 100%;
+    }
+    table{
+        font-size: 9px;
     }
     #form{
         width: 100%;
@@ -757,6 +781,12 @@ div form h1{
     .des_grid{
         margin-top: 180px;
     }
+    .tabla_posiciones{
+        width: 80%;
+    }
+    table{
+        font-size: 11px;
+    }
     #form{
         width: 100%;
     }
@@ -768,6 +798,12 @@ div form h1{
     }
     .des_grid{
         margin-top: 180px;
+    }
+    .tabla_posiciones{
+        width: 60%;
+    }
+    table{
+        font-size: 13px;
     }
 }
 
