@@ -436,6 +436,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     /*centrado*/
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -1400px;
 }
 table{
     font-size: 16px;
@@ -444,22 +445,19 @@ table{
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
-	padding: 10px;
     color: #19A7CE;
 	margin: auto;
 	margin-top: 20px;
 	margin-bottom: -1400px;
 }
 
-body table thead tr th {
+body table thead tr{
 	background-color: #F6F1F1;
     text-align: center;
 }
 
-
-
 body h3 {
-	margin-top: 100px;
+	margin-top: 150px;
 	color: #19A7CE;
     font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
     font-size: 30px;
