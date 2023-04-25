@@ -139,13 +139,14 @@ footer {
 
 /* contenedor*/
 .slideshow-container {
-    max-width: 61%;
+    display: grid;
+    width: 80%;
     position: relative;
-    margin: 6%;
-    margin-left: 19%; /*Ver como centrar de otra manera*/
     z-index: 5;
     box-shadow: 1px 1px 15px 5px #000000; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
     cursor: pointer;
+    margin: 0 auto; /*Centro*/
+    margin-top: 70px;
 }
 
 /* Escondo imagenes por def*/
@@ -717,6 +718,15 @@ div form h1{
     color: #000000;
     cursor: pointer;
 }
+
+.text_des{
+    text-align: center;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif;
+    color: #19A7CE;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+
+}
+/*Fin desarrollador*/
 
 /*Media querys*/
 @media screen and (max-width: 368px) { /*Mobile*/
