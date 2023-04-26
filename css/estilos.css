@@ -259,7 +259,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     grid-template-rows: auto 1fr;
     margin-left: 22px; 
     margin-bottom: 25px;
-    border: 5px solid yellow; /*para guía*/
+    /*border: 5px solid yellow;*/ /*para guía*/
 }
 
 .grid-item:hover{
@@ -368,7 +368,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     grid-template-rows: auto 1fr;
     margin-left: 22px; /*Le doy margen para centrar los elementos dentro del grid.*/
     margin-bottom: 20px;
-    border: 5px solid yellow; /*para guía*/
+    /*border: 5px solid yellow;*/ /*para guía*/
 }
 
 .grid_league-item:hover{
@@ -739,13 +739,13 @@ div form h1{
         font-size: 7px;
     }
     .slideshow-container{
-        margin-top: 300px;
+        margin-top: 200px;
     }
 
     .grid-container {
         width: 100%;
         left: 5%;
-        top: 60%;
+        top: 50%;
         row-gap: 0rem;
         height: 250px;
     }
@@ -774,22 +774,10 @@ div form h1{
     }
 
     .resultados_y_partidos {
-        top: 150%; 
+        top: 160%; 
         right: 20%; 
-        height: 25%;
+        height: 45%;
         width: 60%;
-        /*background-color: #8cb6c7;*/ 
-        /*background-color: #146C94; */
-        padding: 0.5px;
-        /*border: 1px solid black;
-        border-radius: 10px;*/
-        /*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);*/ 
-        /*box-shadow: 5px 5px 5px 35px #146C94;*/  /*SINTAXIS: box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;*/ /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
-        margin-top: 33px; /*Bajo el rectángulo*/
-        background-image: url(../media/background_img/children-1822688.jpg);
-        box-shadow: 1px 1px 15px 5px #000000;
-        
-        /*border: solid;*/
     }
     
     .des_grid{
