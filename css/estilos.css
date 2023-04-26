@@ -259,7 +259,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     grid-template-rows: auto 1fr;
     margin-left: 22px; 
     margin-bottom: 25px;
-    border: 5px solid yellow; /*para guía*/
+    /*border: 5px solid yellow;*/ /*para guía*/
 }
 
 .grid-item:hover{
@@ -755,7 +755,7 @@ div form h1{
     .grid_league-container {
         width: 90%;
         left: 5%;
-        top: 100%;
+        top: 115%;
         row-gap: 0rem;
         height: 85%;
     }
@@ -775,14 +775,11 @@ div form h1{
     .ryp_titulo{
         font-size: 9px;
     }
-    div ul li{
-        font-size: 7px;
-    }
 
     .resultados_y_partidos {
         top: 190%; 
         right: 20%; 
-        height: 45%;
+        height: 40%;
         width: 60%;
     }
     
