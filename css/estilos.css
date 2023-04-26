@@ -780,7 +780,7 @@ div form h1{
     .resultados_y_partidos {
         top: 190%; 
         right: 10%; 
-        height: 40%;
+        height: 50%;
         width: 80%;
     }
     
@@ -798,7 +798,7 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-top: 700%;
+        margin-top: 400%;
     }
     footer{
         width: 100%;
@@ -875,7 +875,7 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-top: 550%;
+        margin-top: 450%;
     }
     footer{
         width: 100%;
