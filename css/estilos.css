@@ -727,7 +727,85 @@ div form h1{
 /*Fin desarrollador*/
 
 /*Media querys*/
-@media screen and (max-width: 368px) { /*Mobile*/
+
+@media screen and (max-width: 320px) { /*Mobile*/
+    header{
+        height: 15%; /*Agrego height*/
+    }
+    
+    body header a h1, body header a h2{ /*Para el título*/
+        font-size: 13px;
+    }
+    #header_links a{
+        font-size: 7px;
+    }
+    .slideshow-container{
+        margin-top: 150px;
+    }
+
+    .grid-container {
+        width: 90%;
+        left: 5%;
+        top: 60%;
+        row-gap: 0rem;
+        height: 250px;
+    }
+    .grid-item{
+        margin-left: -1px; 
+    }
+    .grid_league-container {
+        width: 90%;
+        left: 5%;
+        top: 115%;
+        row-gap: 0rem;
+        height: 60%;
+    }
+    .grid_league-item{
+        margin-left: -1px; 
+        height: 120px;
+    }
+
+    .grid_text_abajo{
+        font-size: 10px;
+        grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
+        text-align: center;
+    }
+    .text_left, .text_left_two, text, .numbertext{
+        font-size: 7px;
+    }
+    .ryp_titulo{
+        font-size: 13px;
+    }
+
+    .resultados_y_partidos {
+        top: 180%; 
+        right: 10%; 
+        height: 30%;
+        width: 80%;
+    }
+    
+    .des_grid{
+        margin-top: 150px;
+    }
+    .tabla_posiciones{
+        width: 100%;
+    }
+    table{
+        font-size: 7px;
+    }
+    body h3 {
+        font-size: 9px;
+    }
+    #form{
+        width: 100%;
+        margin-top: 650%;
+    }
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 368px) { /*Mobile*/
     header{
         height: 15%; /*Agrego height*/
     }
@@ -777,9 +855,9 @@ div form h1{
     }
 
     .resultados_y_partidos {
-        top: 190%; 
+        top: 210%; 
         right: 20%; 
-        height: 40%;
+        height: 30%;
         width: 60%;
     }
     
@@ -797,6 +875,7 @@ div form h1{
     }
     #form{
         width: 100%;
+        margin-top: 650%;
     }
     footer{
         width: 100%;
