@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/estilos.css"> <!--Pongo un punto para indicar que la carpeta css está en la misma careta que index.html-->
     <title>MMz noticias</title>
 </head>
-<body>
+<body class="container"> 
     <header>
         <a href="index.html" class="titulo"><h1>LO ÚLTIMO DEL FÚTBOL EUROPEO</h1></a>
         <nav id="header_links">
@@ -34,35 +34,42 @@
             </ul>
         </nav>
     </header>
-    <!-- Slideshow contenedor -->
-    <div class="slideshow-container">
-
-        <!-- Imagenes con número y caption-->
-        <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="./media/ucl/img/uefa_champions_league_2022_23_quarter-finals_semi-finals_draw.jpg" style="width:100%"> <!--Agrego borde class="imagen_con_borde"-->  <!--class="imagen_redondada"-->
-        <div class="text">Se sortean los cuartos de final de la UCL</div>
-        </div>
     
-        <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="./media/uel/img/fbl-eur-c3-draw.jpg" style="width:100%" >  <!--class="imagen_redondada"-->
-        <div class="text">Se sortean los cuartos de final de la UEL</div>
-        </div>
-    
-        <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="./media/pl/img/dan-burn-nottingham-forest.jpg" style="width:100%">  <!--class="imagen_redondada"-->
-        <div class="text">Newcastle United vence al Nottingham forest sobre la hora</div>
-        </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-12">                
+                <!-- Slideshow contenedor -->
+                <div class="slideshow-container"> 
 
-        <!--Automatic slideshow-->
-        <script src="./js/automatic_slideshow.js"></script>   
-        <!--Fin-Automatic slideshow-->
+                    <!-- Imagenes con número y caption-->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./media/ucl/img/uefa_champions_league_2022_23_quarter-finals_semi-finals_draw.jpg" style="width:100%"> <!--Agrego borde class="imagen_con_borde"-->  <!--class="imagen_redondada"-->
+                    <div class="text">Se sortean los cuartos de final de la UCL</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./media/uel/img/fbl-eur-c3-draw.jpg" style="width:100%" >  <!--class="imagen_redondada"-->
+                    <div class="text">Se sortean los cuartos de final de la UEL</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./media/pl/img/dan-burn-nottingham-forest.jpg" style="width:100%">  <!--class="imagen_redondada"-->
+                    <div class="text">Newcastle United vence al Nottingham forest sobre la hora</div>
+                    </div>
+
+                    <!--Automatic slideshow-->
+                    <script src="./js/automatic_slideshow.js"></script>   
+                    <!--Fin-Automatic slideshow-->
+                </div>
+            </div>
+        </div>
     </div>
     <br>
-    <div>
-        <div class="grid-container">
+    <div class="container-fluid"></div>
+        <div class="grid-container col-xs-12 col-md-8 col-lg-12">
             <div class="grid-item zoom"> 
                 <img src="./media/uel/img/fbl-eur-c3-draw.jpg" class="imagen_redondada">
                 <div class="grid_text_abajo">Texto de la primera imagen</div>
@@ -89,7 +96,6 @@
                 <div class="grid_text_abajo">Texto de la primera imagen</div>
             </div>
         </div>
-    </div>
     
     <div class="grid_league-container">
         <div class="grid_league-item zoom">
