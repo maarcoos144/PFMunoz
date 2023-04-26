@@ -140,7 +140,7 @@ footer {
 /* contenedor*/
 .slideshow-container {
     display: grid;
-    width: 80%;
+    max-width: 100%;
     position: relative;
     z-index: 5;
     box-shadow: 1px 1px 15px 5px #000000; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
@@ -222,7 +222,7 @@ footer {
     font-weight: bold;
     width: 46%;
     height: 45%;
-    left: 365px;
+    /*left: 365px;*/
     top: 83%; 
     text-align: center;
     padding-bottom: 100px; /* Agrega un padding de 100px al final del contenido. Esto para que el footer no tape el contenido del grid. */
@@ -259,6 +259,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     grid-template-rows: auto 1fr;
     margin-left: 22px; 
     margin-bottom: 25px;
+    border: 5px solid yellow; /*para guía*/
 }
 
 .grid-item:hover{
@@ -289,23 +290,19 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 .grid-container div:nth-child(3n-2) .text_left {
     position: absolute;
     top: 50%;
-    left: -90px; /*Acomodo posición de la primer columna.*/
+    /*left: -90px;*/ /*Acomodo posición de la primer columna.*/
     transform: translateY(-50%);
 }
 
 .grid-container div:nth-child(3n-2) .text_left_two {
     position: absolute;
     top: 60%;
-    left: -90px; /*Acomodo posición de la primer columna.*/
+    /*left: -90px;*/ /*Acomodo posición de la primer columna.*/
     transform: translateY(-50%);
 }
 
 /* Estilo para la clase "text-left" */
-.text_left {
-    font-size: 16px;
-}
-
-.text_left_two {
+.text_left .text_left_two {
     font-size: 16px;
 }
 /*Fin Grid noticias*/
@@ -335,7 +332,7 @@ noticias específicas de cada liga en particular. Las propiedades son las mismas
     /*width: 48%;*/
     width: 61%;
     height: 108%;
-    left: 365px;
+    /* left: 365px; */
     top: 130%; 
     text-align: center;
     padding-bottom: 100px; /* Agrega un padding de 100px al final del contenido. Esto para que el footer no tape el contenido del grid. */
@@ -371,6 +368,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     grid-template-rows: auto 1fr;
     margin-left: 22px; /*Le doy margen para centrar los elementos dentro del grid.*/
     margin-bottom: 20px;
+    border: 5px solid yellow; /*para guía*/
 }
 
 .grid_league-item:hover{
@@ -731,14 +729,69 @@ div form h1{
 /*Media querys*/
 @media screen and (max-width: 368px) { /*Mobile*/
     header{
-        height: 21%; /*Agrego height*/
+        height: 15%; /*Agrego height*/
     }
+    
     body header a h1, body header a h2{ /*Para el título*/
         font-size: 13px;
     }
     #header_links a{
         font-size: 7px;
     }
+    .slideshow-container{
+        margin-top: 300px;
+    }
+
+    .grid-container {
+        width: 100%;
+        left: 5%;
+        top: 60%;
+        row-gap: 0rem;
+        height: 250px;
+    }
+    .grid-item{
+        margin-left: -15px; 
+    }
+    .grid_league-container {
+        width: 100%;
+        left: 5%;
+        top: 90%;
+        row-gap: 0rem;
+        height: 55%;
+    }
+    .grid_league-item{
+        margin-left: -15px; 
+        height: 120px;
+    }
+
+    .grid_text_abajo{
+        font-size: 10px;
+        grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
+        text-align: center;
+    }
+    .text_left, .text_left_two{
+        font-size: 8px;
+    }
+
+    .resultados_y_partidos {
+        top: 150%; 
+        right: 20%; 
+        height: 25%;
+        width: 60%;
+        /*background-color: #8cb6c7;*/ 
+        /*background-color: #146C94; */
+        padding: 0.5px;
+        /*border: 1px solid black;
+        border-radius: 10px;*/
+        /*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);*/ 
+        /*box-shadow: 5px 5px 5px 35px #146C94;*/  /*SINTAXIS: box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;*/ /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
+        margin-top: 33px; /*Bajo el rectángulo*/
+        background-image: url(../media/background_img/children-1822688.jpg);
+        box-shadow: 1px 1px 15px 5px #000000;
+        
+        /*border: solid;*/
+    }
+    
     .des_grid{
         margin-top: 150px;
     }
@@ -764,6 +817,20 @@ div form h1{
     }
     #header_links a{
         font-size: 10px;
+    }
+    .slideshow-container{
+        margin-top: 250px;
+    }
+    .grid_league-container, .grid-container {
+        width: 100%;
+    }
+    .grid_text_abajo{
+        font-size: 10px;
+        grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
+        text-align: center;
+    }
+    .text_left, .text_left_two{
+        font-size: 8px;
     }
     .des_grid{
         margin-top: 150px;
