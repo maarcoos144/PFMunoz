@@ -90,7 +90,7 @@ footer {
     /*Pongo el footer fijo y abajo.*/
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 68.3%;
     height: 5%;
     padding-top: 15px;
     background-image: url(../media/background_img/jump-1822412.jpg);
@@ -140,13 +140,13 @@ footer {
 /* contenedor*/
 .slideshow-container {
     display: grid;
-    max-width: 100%;
+    max-width: 90%;
     position: relative;
     z-index: 5;
     box-shadow: 1px 1px 15px 5px #000000; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
     cursor: pointer;
     margin: 0 auto; /*Centro*/
-    margin-top: 70px;
+    margin-top: 105px;
 }
 
 /* Escondo imagenes por def*/
@@ -226,7 +226,7 @@ footer {
     top: 83%; 
     text-align: center;
     padding-bottom: 100px; /* Agrega un padding de 100px al final del contenido. Esto para que el footer no tape el contenido del grid. */
-
+    margin-left: 80px;
     box-shadow: 1px 1px 15px 5px #000000;
     background-color: #146C94;
     background-image: url(../media/background_img/children-1822688.jpg);
@@ -330,13 +330,12 @@ noticias específicas de cada liga en particular. Las propiedades son las mismas
     font-size: 12px;
     font-weight: bold;
     /*width: 48%;*/
-    width: 61%;
+    width: 60%;
     height: 108%;
     /* left: 365px; */
     top: 130%; 
-    text-align: center;
-    padding-bottom: 100px; /* Agrega un padding de 100px al final del contenido. Esto para que el footer no tape el contenido del grid. */
-
+    text-align: center; 
+    margin-left: 80px;
     box-shadow: 1px 1px 15px 5px #000000;
     /* background-color: #146C94; */
     background-image: url(../media/background_img/children-1822688.jpg);
@@ -550,9 +549,9 @@ body h3 {
 /*Clase con últimos resultados y próximos partidos.*/
 .resultados_y_partidos {
     position: absolute;
-    top: 80%; 
+    top: 79.7%; 
     right: 20%; 
-    height: 44.6%;
+    height: 44.9%;
     width: 13%;
     /*background-color: #8cb6c7;*/ 
     /*background-color: #146C94; */
@@ -598,7 +597,7 @@ body div ul{
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: solid;
     margin:auto;
-    margin-top:  1450px;
+    margin-top:  1550px;
     margin-bottom:  60px;
     background-image: url(../media/background_img/jump-1822412.jpg);
 }
@@ -614,7 +613,6 @@ body div ul{
 
 #contacto{
     /* background-color: #146C94; */
-    height: 555px;
     box-shadow: 1px 1px 15px 5px #000000; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
     background-image: url(../media/background_img/jump-1822412.jpg);
 }
