@@ -739,13 +739,13 @@ div form h1{
         font-size: 7px;
     }
     .slideshow-container{
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     .grid-container {
         width: 100%;
         left: 5%;
-        top: 50%;
+        top: 60%;
         row-gap: 0rem;
         height: 250px;
     }
@@ -755,9 +755,9 @@ div form h1{
     .grid_league-container {
         width: 100%;
         left: 5%;
-        top: 90%;
+        top: 100%;
         row-gap: 0rem;
-        height: 55%;
+        height: 65%;
     }
     .grid_league-item{
         margin-left: -15px; 
@@ -774,7 +774,7 @@ div form h1{
     }
 
     .resultados_y_partidos {
-        top: 160%; 
+        top: 180%; 
         right: 20%; 
         height: 45%;
         width: 60%;
