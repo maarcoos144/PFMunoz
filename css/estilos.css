@@ -756,9 +756,9 @@ div form h1{
     .grid_league-container {
         width: 90%;
         left: 5%;
-        top: 115%;
+        top: 120%;
         row-gap: 0rem;
-        height: 60%;
+        height: 65%;
     }
     .grid_league-item{
         margin-left: -1px; 
@@ -778,9 +778,9 @@ div form h1{
     }
 
     .resultados_y_partidos {
-        top: 180%; 
+        top: 190%; 
         right: 10%; 
-        height: 30%;
+        height: 40%;
         width: 80%;
     }
     
@@ -798,7 +798,7 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-top: 650%;
+        margin-top: 700%;
     }
     footer{
         width: 100%;
@@ -857,7 +857,7 @@ div form h1{
     .resultados_y_partidos {
         top: 210%; 
         right: 20%; 
-        height: 30%;
+        height: 40%;
         width: 60%;
     }
     
