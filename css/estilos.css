@@ -41,13 +41,13 @@ header {
 }
 #header_links ul li{
     display: inline;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 #header_links a{
     color: #19A7CE;
     font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
-    font-size: 16x;
+    font-size: 16px;
     text-align: center;
     font-weight: bold;
     /*text-shadow: 3px 3px 3px #000000;*/
@@ -90,7 +90,7 @@ footer {
     /*Pongo el footer fijo y abajo.*/
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 68.3%;
     height: 5%;
     padding-top: 15px;
     background-image: url(../media/background_img/jump-1822412.jpg);
@@ -139,13 +139,14 @@ footer {
 
 /* contenedor*/
 .slideshow-container {
-    max-width: 61%;
+    display: grid;
+    max-width: 90%;
     position: relative;
-    margin: 6%;
-    margin-left: 19%; /*Ver como centrar de otra manera*/
     z-index: 5;
     box-shadow: 1px 1px 15px 5px #000000; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
     cursor: pointer;
+    margin: 0 auto; /*Centro*/
+    margin-top: 105px;
 }
 
 /* Escondo imagenes por def*/
@@ -221,11 +222,11 @@ footer {
     font-weight: bold;
     width: 46%;
     height: 45%;
-    left: 365px;
+    /*left: 365px;*/
     top: 83%; 
     text-align: center;
     padding-bottom: 100px; /* Agrega un padding de 100px al final del contenido. Esto para que el footer no tape el contenido del grid. */
-
+    margin-left: 80px;
     box-shadow: 1px 1px 15px 5px #000000;
     background-color: #146C94;
     background-image: url(../media/background_img/children-1822688.jpg);
@@ -258,6 +259,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     grid-template-rows: auto 1fr;
     margin-left: 22px; 
     margin-bottom: 25px;
+    /*border: 5px solid yellow;*/ /*para guía*/
 }
 
 .grid-item:hover{
@@ -288,23 +290,19 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 .grid-container div:nth-child(3n-2) .text_left {
     position: absolute;
     top: 50%;
-    left: -90px; /*Acomodo posición de la primer columna.*/
+    /*left: -90px;*/ /*Acomodo posición de la primer columna.*/
     transform: translateY(-50%);
 }
 
 .grid-container div:nth-child(3n-2) .text_left_two {
     position: absolute;
     top: 60%;
-    left: -90px; /*Acomodo posición de la primer columna.*/
+    /*left: -90px;*/ /*Acomodo posición de la primer columna.*/
     transform: translateY(-50%);
 }
 
 /* Estilo para la clase "text-left" */
-.text_left {
-    font-size: 16px;
-}
-
-.text_left_two {
+.text_left .text_left_two {
     font-size: 16px;
 }
 /*Fin Grid noticias*/
@@ -332,13 +330,12 @@ noticias específicas de cada liga en particular. Las propiedades son las mismas
     font-size: 12px;
     font-weight: bold;
     /*width: 48%;*/
-    width: 61%;
+    width: 60%;
     height: 108%;
-    left: 365px;
+    /* left: 365px; */
     top: 130%; 
-    text-align: center;
-    padding-bottom: 100px; /* Agrega un padding de 100px al final del contenido. Esto para que el footer no tape el contenido del grid. */
-
+    text-align: center; 
+    margin-left: 80px;
     box-shadow: 1px 1px 15px 5px #000000;
     /* background-color: #146C94; */
     background-image: url(../media/background_img/children-1822688.jpg);
@@ -370,6 +367,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     grid-template-rows: auto 1fr;
     margin-left: 22px; /*Le doy margen para centrar los elementos dentro del grid.*/
     margin-bottom: 20px;
+    /*border: 5px solid yellow;*/ /*para guía*/
 }
 
 .grid_league-item:hover{
@@ -431,23 +429,33 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 /*Fin Grid Leagues*/
 
 /*PL Posiciones*/
+.tabla_posiciones{
+    width: 40%;
+    /*centrado*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1400px;
+}
+table{
+    font-size: 16px;
+}
+
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
-	padding: 10px;
     color: #19A7CE;
 	margin: auto;
 	margin-top: 20px;
 	margin-bottom: -1400px;
 }
 
-body table thead tr th {
+body table thead tr{
 	background-color: #F6F1F1;
     text-align: center;
 }
 
 body h3 {
-	margin-top: 100px;
+	margin-top: 150px;
 	color: #19A7CE;
     font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
     font-size: 30px;
@@ -483,7 +491,7 @@ body h3 {
     display: flex;
     /*flex-direction: row;*/ /*Por default*/
     /*flex-wrap: wrap;*/
-    flex-flow: row wrap;
+    flex-flow: row wrap; /*Ayudo al resonsive.*/
     justify-content: space-around;
     align-items: center;
     /*border: 20px solid;*/
@@ -516,32 +524,34 @@ body h3 {
     cursor: pointer;
 }
 
-.jugador_text_desc{
+/*Se comenta la descripcoón del jugador porque no lo puedo hacer funcionar bien*/
+/* .jugador_text_desc{
     opacity: 0;
-    transition: opacity 0.3s ease-in-out; /*transición*/
+    transition: opacity 0.3s ease-in-out; 
     border: 10px solid;
     background-color: #19A7CE;
     font-weight: bold;
-}
+} */
 
-.jugador:hover .jugador_text_desc,
+/* .jugador:hover .jugador_text_desc,
 .jugador_text:hover .jugador_text_desc{
-    opacity: 1;
+    opacity: 1; */
     /*
     .jugador:hover .jugador_text_desc: Esta regla aplica un estilo al elemento con la clase .jugador_text_desc cuando se pasa el mouse por 
     encima del elemento con la clase .jugador. Esto significa que cuando el mouse está sobre
     el contenedor con la clase .jugador, se cambia la opacidad del elemento con la clase .jugador_text_desc a 1, lo que lo hace visible.
     */
-} 
+/* }  
+/*Fin - Se comenta la descripcoón del jugador porque no lo puedo hacer funcionar bien*/
 /*Fin - Jugadores destacados*/
 
 /*Resultados y partidos*/
 /*Clase con últimos resultados y próximos partidos.*/
 .resultados_y_partidos {
     position: absolute;
-    top: 80%; 
+    top: 79.7%; 
     right: 20%; 
-    height: 44.6%;
+    height: 44.9%;
     width: 13%;
     /*background-color: #8cb6c7;*/ 
     /*background-color: #146C94; */
@@ -587,7 +597,8 @@ body div ul{
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: solid;
     margin:auto;
-    margin-top:  1450px;
+    margin-top:  1550px;
+    margin-bottom:  60px;
     background-image: url(../media/background_img/jump-1822412.jpg);
 }
 
@@ -601,8 +612,7 @@ body div ul{
 }
 
 #contacto{
-    background-color: #146C94;
-    height: 555px;
+    /* background-color: #146C94; */
     box-shadow: 1px 1px 15px 5px #000000; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
     background-image: url(../media/background_img/jump-1822412.jpg);
 }
@@ -678,8 +688,8 @@ div form h1{
     border-radius: 1%;
     width: 100%;
     color: rgb(0, 0, 0);
-    /*padding: 1rem;*/
-    padding-top: 120px;
+    padding-top: 10px;
+    margin-top: 120px;
     margin-bottom: -1400px; /*Quito espacio del grid para que "Contacto" se suba. Aplico esto en todas los html.*/
 }
 
@@ -692,7 +702,7 @@ div form h1{
     height: 100%; /* La altura ocupa el alto completo del contenedor */
     /* object-fit: cover;*/
     cursor: pointer;
-    box-shadow: 1px 1px 1000px 100px #19A7CE;
+    box-shadow: 1px 1px 1000px 30px #19A7CE; 
     border-radius: 50%;
     border: solid;
     border-color: #000000;
@@ -705,16 +715,215 @@ div form h1{
     cursor: pointer;
 }
 
+.text_des{
+    text-align: center;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif;
+    color: #19A7CE;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+
+}
+/*Fin desarrollador*/
+
 /*Media querys*/
-@media only screen and (max-width: 768px) { /*Mobile*/
+@media screen and (min-width: 1px) and (max-width: 368px) { /*Mobile*/
     header{
-        height: 20%; /*Agrego height*/
+        height: 15%; /*Agrego height*/
     }
+    
+    body header a h1, body header a h2{ /*Para el título*/
+        font-size: 13px;
+    }
+    #header_links a{
+        font-size: 6px;
+    }
+    .slideshow-container{
+        margin-top: 160px;
+        width: 100%;
+    }
+
+    .grid-container {
+        width: 90%;
+        left: 5%;
+        top: 380px;
+        row-gap: 0rem;
+        height: 250px;
+        margin-left: 0px;
+    }
+    .grid-item{
+        margin-left: -1px; 
+    }
+    .grid_league-container {
+        width: 90%;
+        left: 5%;
+        top: 700px;
+        row-gap: 0rem;
+        height: 600px;
+        margin-left: 0px;
+    }
+    .grid_league-item{
+        margin-left: -1px; 
+        height: 120px;
+    }
+
+    .grid_text_abajo{
+        font-size: 10px;
+        grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
+        text-align: center;
+    }
+    .text_left, .text_left_two, .numbertext{
+        font-size: 7px;
+    }
+
+    .ryp_titulo{
+        font-size: 9px;
+    }
+
+    .resultados_y_partidos {
+        top: 1350px; 
+        right: 13%; 
+        height: 350px;
+        width: 70%;
+    }
+    
     .des_grid{
-        padding-top: 180px;
+        margin-top: 150px;
+    }
+    .tabla_posiciones{
+        width: 100%;
+    }
+    table{
+        font-size: 7px;
+    }
+    body h3 {
+        font-size: 9px;
     }
     #form{
         width: 100%;
+        margin-top: 1450px;
+    }
+    footer{
+        left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 369px) and (max-width: 576px) { /*Mobile*/
+    header{
+        height: 20%; /*Agrego height*/
+    }
+    body header a h1, body header a h2{ /*Para el título*/
+        font-size: 16px;
+    }
+    #header_links a{
+        font-size: 7px;
+    }
+    .slideshow-container{
+        margin-top: 250px;
+        width: 100%;
+    }
+    .grid-container {
+        width: 90%;
+        left: 5%;
+        top: 550px;
+        row-gap: 0rem;
+        height: 270px;
+        margin-left: 0px;
+    }
+    .grid-item{
+        margin-left: -1px; 
+    }
+    .grid_league-container {
+        width: 90%;
+        left: 5%;
+        top: 850px;
+        row-gap: 0rem;
+        height: 700px;
+        margin-left: 0px;
+    }
+    .grid_league-item{
+        margin-left: -1px; 
+        height: 120px;
+    }
+
+    .resultados_y_partidos {
+        top: 1600px; 
+        right: 20%; 
+        height: 350px;
+        width: 50%;
+    }
+    .grid_text_abajo{
+        font-size: 10px;
+        grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
+        text-align: center;
+    }
+    .text_left, .text_left_two{
+        font-size: 8px;
+    }
+    .des_grid{
+        margin-top: 150px;
+    }
+    .tabla_posiciones{
+        width: 100%;
+    }
+    table{
+        font-size: 9px;
+    }
+    body h3 {
+        font-size: 11px;
+    }
+    #form{
+        width: 100%;
+        margin-top: 1550px;
+    }
+    footer{
+        left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px){ /*Tablets en vertical*/
+    header{
+        height: 15%; /*Agrego height*/
+    }
+    body header a h1, body header a h2{ /*Para el título*/
+        font-size: 20px;
+    }
+    #header_links a{
+        font-size: 12px;
+    }
+    .des_grid{
+        margin-top: 180px;
+    }
+    .tabla_posiciones{
+        width: 80%;
+    }
+    table{
+        font-size: 11px;
+    }
+    body h3 {
+        font-size: 13px;
+    }
+    #form{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){ /*Tablets en horizontal*/
+    header{
+        height: 15%; /*Agrego height*/
+    }
+    .des_grid{
+        margin-top: 180px;
+    }
+    .tabla_posiciones{
+        width: 60%;
+    }
+    table{
+        font-size: 13px;
+    }
+    body h3 {
+        font-size: 15px;
     }
 }
 
