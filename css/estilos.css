@@ -259,7 +259,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     grid-template-rows: auto 1fr;
     margin-left: 22px; 
     margin-bottom: 25px;
-    border: 5px solid yellow; /*para guía*/
+    /*border: 5px solid yellow;*/ /*para guía*/
 }
 
 .grid-item:hover{
@@ -738,14 +738,14 @@ div form h1{
         font-size: 7px;
     }
     .slideshow-container{
-        margin-top: 150px;
+        margin-top: 190px;
         width: 100%;
     }
 
     .grid-container {
         width: 90%;
         left: 5%;
-        top: 60%;
+        top: 40%;
         row-gap: 0rem;
         height: 250px;
         margin-left: 0px;
@@ -756,9 +756,9 @@ div form h1{
     .grid_league-container {
         width: 90%;
         left: 5%;
-        top: 105%;
+        top: 70%;
         row-gap: 0rem;
-        height: 70%;
+        height: 60%;
         margin-left: 0px;
     }
     .grid_league-item{
@@ -779,9 +779,9 @@ div form h1{
     }
 
     .resultados_y_partidos {
-        top: 190%; 
+        top: 135%; 
         right: 10%; 
-        height: 50%;
+        height: 30%;
         width: 80%;
     }
     
@@ -799,11 +799,12 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-top: 730%;
+        margin-top: 480%;
     }
     footer{
         width: 100%;
         text-align: center;
+        left: 0%;
     }
 }
 @media screen and (min-width: 321px) and (max-width: 368px) { /*Mobile*/
@@ -818,14 +819,14 @@ div form h1{
         font-size: 7px;
     }
     .slideshow-container{
-        margin-top: 150px;
+        margin-top: 190px;
         width: 100%;
     }
 
     .grid-container {
         width: 90%;
         left: 5%;
-        top: 60%;
+        top: 40%;
         row-gap: 0rem;
         height: 250px;
         margin-left: 0px;
@@ -836,9 +837,9 @@ div form h1{
     .grid_league-container {
         width: 90%;
         left: 5%;
-        top: 100%;
+        top: 70%;
         row-gap: 0rem;
-        height: 90%;
+        height: 60%;
         margin-left: 0px;
     }
     .grid_league-item{
@@ -859,9 +860,9 @@ div form h1{
     }
 
     .resultados_y_partidos {
-        top: 210%; 
+        top: 135%; 
         right: 20%; 
-        height: 40%;
+        height: 30%;
         width: 60%;
     }
     
@@ -879,9 +880,10 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-top: 730%;
+        margin-top: 400%;
     }
     footer{
+        left: 0%;
         width: 100%;
         text-align: center;
     }
@@ -898,9 +900,37 @@ div form h1{
     }
     .slideshow-container{
         margin-top: 250px;
-    }
-    .grid_league-container, .grid-container {
         width: 100%;
+    }
+    .grid-container {
+        width: 90%;
+        left: 5%;
+        top: 55%;
+        row-gap: 0rem;
+        height: 270px;
+        margin-left: 0px;
+    }
+    .grid-item{
+        margin-left: -1px; 
+    }
+    .grid_league-container {
+        width: 90%;
+        left: 5%;
+        top: 90%;
+        row-gap: 0rem;
+        height: 60%;
+        margin-left: 0px;
+    }
+    .grid_league-item{
+        margin-left: -1px; 
+        height: 120px;
+    }
+
+    .resultados_y_partidos {
+        top: 155%; 
+        right: 20%; 
+        height: 30%;
+        width: 60%;
     }
     .grid_text_abajo{
         font-size: 10px;
@@ -924,6 +954,11 @@ div form h1{
     }
     #form{
         width: 100%;
+    }
+    footer{
+        left: 0%;
+        width: 100%;
+        text-align: center;
     }
 }
 
