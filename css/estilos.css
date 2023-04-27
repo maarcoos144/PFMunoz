@@ -739,6 +739,7 @@ div form h1{
     }
     .slideshow-container{
         margin-top: 150px;
+        width: 100%;
     }
 
     .grid-container {
@@ -747,6 +748,7 @@ div form h1{
         top: 60%;
         row-gap: 0rem;
         height: 250px;
+        margin-left: 0px;
     }
     .grid-item{
         margin-left: -1px; 
@@ -757,6 +759,7 @@ div form h1{
         top: 120%;
         row-gap: 0rem;
         height: 65%;
+        margin-left: 0px;
     }
     .grid_league-item{
         margin-left: -1px; 
@@ -796,7 +799,7 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-top: 400%;
+        margin-top: 750%;
     }
     footer{
         width: 100%;
@@ -816,6 +819,7 @@ div form h1{
     }
     .slideshow-container{
         margin-top: 150px;
+        width: 100%;
     }
 
     .grid-container {
@@ -824,6 +828,7 @@ div form h1{
         top: 60%;
         row-gap: 0rem;
         height: 250px;
+        margin-left: 0px;
     }
     .grid-item{
         margin-left: -1px; 
@@ -834,6 +839,7 @@ div form h1{
         top: 115%;
         row-gap: 0rem;
         height: 85%;
+        margin-left: 0px;
     }
     .grid_league-item{
         margin-left: -1px; 
@@ -873,7 +879,7 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-top: 450%;
+        margin-top: 750%;
     }
     footer{
         width: 100%;
