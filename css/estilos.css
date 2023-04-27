@@ -259,7 +259,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     grid-template-rows: auto 1fr;
     margin-left: 22px; 
     margin-bottom: 25px;
-    /*border: 5px solid yellow;*/ /*para guía*/
+    border: 5px solid yellow; /*para guía*/
 }
 
 .grid-item:hover{
@@ -780,8 +780,8 @@ div form h1{
     .resultados_y_partidos {
         top: 1350px; 
         right: 20%; 
-        height: 40%;
-        width: 60%;
+        height: 100px;
+        width: 80%;
     }
     
     .des_grid{
@@ -798,7 +798,7 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-top: 1550px;
+        margin-top: 1450px;
     }
     footer{
         left: 0%;
