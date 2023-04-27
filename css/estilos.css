@@ -756,9 +756,9 @@ div form h1{
     .grid_league-container {
         width: 90%;
         left: 5%;
-        top: 120%;
+        top: 105%;
         row-gap: 0rem;
-        height: 65%;
+        height: 70%;
         margin-left: 0px;
     }
     .grid_league-item{
@@ -799,7 +799,7 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-top: 750%;
+        margin-top: 730%;
     }
     footer{
         width: 100%;
@@ -836,9 +836,9 @@ div form h1{
     .grid_league-container {
         width: 90%;
         left: 5%;
-        top: 115%;
+        top: 100%;
         row-gap: 0rem;
-        height: 85%;
+        height: 90%;
         margin-left: 0px;
     }
     .grid_league-item{
@@ -879,7 +879,7 @@ div form h1{
     }
     #form{
         width: 100%;
-        margin-top: 750%;
+        margin-top: 730%;
     }
     footer{
         width: 100%;
