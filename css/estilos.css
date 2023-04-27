@@ -41,7 +41,7 @@ header {
 }
 #header_links ul li{
     display: inline;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 #header_links a{
@@ -780,9 +780,9 @@ div form h1{
 
     .resultados_y_partidos {
         top: 1350px; 
-        right: 10%; 
+        right: 13%; 
         height: 350px;
-        width: 80%;
+        width: 70%;
     }
     
     .des_grid{
@@ -849,7 +849,7 @@ div form h1{
         top: 1600px; 
         right: 20%; 
         height: 350px;
-        width: 60%;
+        width: 50%;
     }
     .grid_text_abajo{
         font-size: 10px;
