@@ -23,7 +23,7 @@ font-weight: define el grosor de la fuente (normal, bold, bolder, lighter).
 header {
     background-color: #000000;
     color: #FFF;
-    height: 9%; /*Agrego height*/
+    height: 100px; /*Agrego height*/
     text-align: center;
     position: fixed;
     width: 100%;
@@ -32,6 +32,12 @@ header {
     z-index: 1000;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     background-image: url(../media/background_img/jump-1822412.jpg);
+}
+body header a h1, body header a h2{ /*Para el título*/
+    font-size: 25px;
+}
+#header_links a{
+    font-size: 12px;
 }
 
 /*Muestro los links del header de forma horizontal.*/
@@ -259,7 +265,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     grid-template-rows: auto 1fr;
     margin-left: 22px; 
     margin-bottom: 25px;
-    border: 5px solid yellow; /*para guía*/
+    /*border: 5px solid yellow;*/ /*para guía*/
 }
 
 .grid-item:hover{
@@ -492,14 +498,17 @@ body h3 {
     /*flex-direction: row;*/ /*Por default*/
     /*flex-wrap: wrap;*/
     flex-flow: row wrap; /*Ayudo al resonsive.*/
-    justify-content: space-around;
-    align-items: center;
     /*border: 20px solid;*/
-    margin-top: 210px;
     width:100%;
     text-align: center;
-    margin-bottom: -1400px;
-    row-gap: 125px;
+    margin-top: 200px;
+    margin-bottom: -1500px;
+}
+
+.row{
+    row-gap: 135px;
+    align-items: center;
+    justify-content: center;
 }
 
 .jugador{
@@ -726,12 +735,12 @@ div form h1{
 
 /*Media querys*/
 @media screen and (min-width: 1px) and (max-width: 368px) { /*Mobile*/
-    header{
-        height: 15%; /*Agrego height*/
-    }
+    /* header{
+        height: 100px: 
+    } */
     
     body header a h1, body header a h2{ /*Para el título*/
-        font-size: 13px;
+        font-size: 7px;
     }
     #header_links a{
         font-size: 6px;
@@ -797,6 +806,9 @@ div form h1{
     body h3 {
         font-size: 9px;
     }
+    .jugador_text{
+        font-size: 10px;
+    }
     #form{
         width: 100%;
         margin-top: 1450px;
@@ -808,11 +820,11 @@ div form h1{
     }
 }
 @media screen and (min-width: 369px) and (max-width: 576px) { /*Mobile*/
-    header{
-        height: 20%; /*Agrego height*/
-    }
+    /* header{
+        height: 100px;
+    } */
     body header a h1, body header a h2{ /*Para el título*/
-        font-size: 16px;
+        font-size: 8px;
     }
     #header_links a{
         font-size: 7px;
@@ -871,6 +883,9 @@ div form h1{
     body h3 {
         font-size: 11px;
     }
+    .jugador_text{
+        font-size: 11px;
+    }
     #form{
         width: 100%;
         margin-top: 1550px;
@@ -883,14 +898,14 @@ div form h1{
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px){ /*Tablets en vertical*/
-    header{
-        height: 15%; /*Agrego height*/
-    }
+    /* header{
+        height: 100px; 
+    } */
     body header a h1, body header a h2{ /*Para el título*/
-        font-size: 20px;
+        font-size: 9px;
     }
     #header_links a{
-        font-size: 12px;
+        font-size: 8px;
     }
     .des_grid{
         margin-top: 180px;
@@ -904,14 +919,23 @@ div form h1{
     body h3 {
         font-size: 13px;
     }
+    .jugador_text{
+        font-size: 12px;
+    }
     #form{
         width: 100%;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){ /*Tablets en horizontal*/
-    header{
-        height: 15%; /*Agrego height*/
+    /* header{
+        height: 100px; 
+    } */
+    body header a h1, body header a h2{ /*Para el título*/
+        font-size: 12px;
+    }
+    #header_links a{
+        font-size: 10px;
     }
     .des_grid{
         margin-top: 180px;
@@ -924,6 +948,9 @@ div form h1{
     }
     body h3 {
         font-size: 15px;
+    }
+    .jugador_text{
+        font-size: 13px;
     }
 }
 
