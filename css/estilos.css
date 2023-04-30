@@ -23,7 +23,7 @@ font-weight: define el grosor de la fuente (normal, bold, bolder, lighter).
 header {
     background-color: #000000;
     color: #FFF;
-    height: 100px; /*Agrego height*/
+    height: 110px; /*Agrego height*/
     text-align: center;
     position: fixed;
     width: 100%;
@@ -152,7 +152,7 @@ footer {
     box-shadow: 1px 1px 15px 5px #000000; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
     cursor: pointer;
     margin: 0 auto; /*Centro*/
-    margin-top: 105px;
+    margin-top: 125px;
 }
 
 /* Escondo imagenes por def*/
@@ -373,7 +373,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     grid-template-rows: auto 1fr;
     margin-left: 22px; /*Le doy margen para centrar los elementos dentro del grid.*/
     margin-bottom: 20px;
-    /*border: 5px solid yellow;*/ /*para guía*/
+    border: 5px solid yellow; /*para guía*/
 }
 
 .grid_league-item:hover{
@@ -734,11 +734,7 @@ div form h1{
 /*Fin desarrollador*/
 
 /*Media querys*/
-@media screen and (min-width: 1px) and (max-width: 368px) { /*Mobile*/
-    /* header{
-        height: 100px: 
-    } */
-    
+@media screen and (min-width: 1px) and (max-width: 368px) { /*Mobile*/    
     body header a h1, body header a h2{ /*Para el título*/
         font-size: 7px;
     }
@@ -748,6 +744,9 @@ div form h1{
     .slideshow-container{
         margin-top: 160px;
         width: 100%;
+    }
+    .text{
+        font-size: 9px;
     }
 
     .grid-container {
@@ -820,9 +819,6 @@ div form h1{
     }
 }
 @media screen and (min-width: 369px) and (max-width: 576px) { /*Mobile*/
-    /* header{
-        height: 100px;
-    } */
     body header a h1, body header a h2{ /*Para el título*/
         font-size: 8px;
     }
@@ -832,6 +828,9 @@ div form h1{
     .slideshow-container{
         margin-top: 250px;
         width: 100%;
+    }
+    .text{
+        font-size: 10px;
     }
     .grid-container {
         width: 90%;
@@ -898,14 +897,14 @@ div form h1{
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px){ /*Tablets en vertical*/
-    /* header{
-        height: 100px; 
-    } */
     body header a h1, body header a h2{ /*Para el título*/
         font-size: 9px;
     }
     #header_links a{
         font-size: 8px;
+    }
+    .text{
+        font-size: 12px;
     }
     .des_grid{
         margin-top: 180px;
@@ -928,9 +927,6 @@ div form h1{
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){ /*Tablets en horizontal*/
-    /* header{
-        height: 100px; 
-    } */
     body header a h1, body header a h2{ /*Para el título*/
         font-size: 12px;
     }
