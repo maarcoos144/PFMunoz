@@ -1,5 +1,5 @@
 Se utilizó bootstrap, media querys, flexbox y grids.
 
-Paginas a validar:
+Paginas a validar - rama main:
 	index.html
 	pl_jugadores_destacados.html (Se llega desde el index, premier league, jugadores destacados).
