@@ -2,4 +2,4 @@ Se utilizó bootstrap, media querys, flexbox y grids.
 
 Paginas a validar:
 	index.html
-	pl_jugadores_destacados.html (Se llega desde el index, premier league, jugadores destacados)
+	pl_jugadores_destacados.html (Se llega desde el index, premier league, jugadores destacados).
