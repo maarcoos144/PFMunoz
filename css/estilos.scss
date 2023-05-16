@@ -682,9 +682,20 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     body header a h1, body header a h2{ /*Para el título*/
         font-size: 7px;
     }
-    #header_links a{
-        font-size: 6px;
+
+    body {
+        header {
+            a{
+                h1{
+                    font-size: 6px; 
+                }
+                h2{
+                    font-size: 6px;
+                }
+            }
+        }
     }
+
     .slideshow-container{
         margin-top: 160px;
         width: 100%;
@@ -759,6 +770,11 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
         left: 0%;
         width: 100%;
         text-align: center;
+    }
+    #contacto{
+        form{
+            width: 100%;
+        }
     }
 }
 @media screen and (min-width: 369px) and (max-width: 576px) { /*Mobile*/
@@ -842,14 +858,29 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
         width: 100%;
         text-align: center;
     }
+    #contacto{
+        form{
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px){ /*Tablets en vertical*/
     body header a h1, body header a h2{ /*Para el título*/
         font-size: 9px;
     }
-    #header_links a{
-        font-size: 8px;
+
+    body {
+        header {
+            a{
+                h1{
+                    font-size: 8px; 
+                }
+                h2{
+                    font-size: 8px;
+                }
+            }
+        }
     }
     .slideshow-container{
         margin-top: 160px;
@@ -918,6 +949,11 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
         left: 0%;
         width: 100%;
         text-align: center;
+    }
+    #contacto{
+        form{
+            width: 100%;
+        }
     }
 }
 

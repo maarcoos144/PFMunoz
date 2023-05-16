@@ -637,7 +637,10 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   body header a h1, body header a h2 { /*Para el título*/
     font-size: 7px;
   }
-  #header_links a {
+  body header a h1 {
+    font-size: 6px;
+  }
+  body header a h2 {
     font-size: 6px;
   }
   .slideshow-container {
@@ -710,6 +713,9 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
     left: 0%;
     width: 100%;
     text-align: center;
+  }
+  #contacto form {
+    width: 100%;
   }
 }
 @media screen and (min-width: 369px) and (max-width: 576px) { /*Mobile*/
@@ -791,12 +797,18 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
     width: 100%;
     text-align: center;
   }
+  #contacto form {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) { /*Tablets en vertical*/
   body header a h1, body header a h2 { /*Para el título*/
     font-size: 9px;
   }
-  #header_links a {
+  body header a h1 {
+    font-size: 8px;
+  }
+  body header a h2 {
     font-size: 8px;
   }
   .slideshow-container {
@@ -866,6 +878,9 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
     left: 0%;
     width: 100%;
     text-align: center;
+  }
+  #contacto form {
+    width: 100%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) { /*Tablets en horizontal*/
