@@ -685,14 +685,11 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 
     body {
         header {
-            a{
-                h1{
-                    font-size: 6px; 
+            #header_links{
+                a{
+                    font-size: 8px;
+                    }
                 }
-                h2{
-                    font-size: 6px;
-                }
-            }
         }
     }
 
@@ -781,8 +778,14 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
     body header a h1, body header a h2{ /*Para el título*/
         font-size: 8px;
     }
-    #header_links a{
-        font-size: 7px;
+    body {
+        header {
+            #header_links{
+                a{
+                    font-size: 7px;
+                    }
+                }
+        }
     }
     .slideshow-container{
         margin-top: 160px;
@@ -872,16 +875,14 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 
     body {
         header {
-            a{
-                h1{
-                    font-size: 8px; 
-                }
-                h2{
+            #header_links{
+                a{
                     font-size: 8px;
+                    }
                 }
-            }
         }
     }
+    
     .slideshow-container{
         margin-top: 160px;
         width: 100%;

@@ -637,11 +637,8 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   body header a h1, body header a h2 { /*Para el título*/
     font-size: 7px;
   }
-  body header a h1 {
-    font-size: 6px;
-  }
-  body header a h2 {
-    font-size: 6px;
+  body header #header_links a {
+    font-size: 8px;
   }
   .slideshow-container {
     margin-top: 160px;
@@ -722,7 +719,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   body header a h1, body header a h2 { /*Para el título*/
     font-size: 8px;
   }
-  #header_links a {
+  body header #header_links a {
     font-size: 7px;
   }
   .slideshow-container {
@@ -805,10 +802,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   body header a h1, body header a h2 { /*Para el título*/
     font-size: 9px;
   }
-  body header a h1 {
-    font-size: 8px;
-  }
-  body header a h2 {
+  body header #header_links a {
     font-size: 8px;
   }
   .slideshow-container {
