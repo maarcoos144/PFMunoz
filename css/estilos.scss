@@ -95,6 +95,9 @@ body {
             tr{
                 background-color: #F6F1F1;
                 text-align: left;
+                /*th{
+                    
+                }*/
             } 
         }
     }
@@ -447,10 +450,14 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 }
 /*Fin PL Posiciones*/
 
+.tabla_goleadores{
+    @extend .tabla_posiciones;
+}
+
 /*PL Jornadas*/
 .jornadas{
-    display: inline-table;
-    margin-bottom: -20%;
+    //display: inline-table;
+    @extend .tabla_posiciones;
 }
 /*Fin PL Jonrnadas*/
 
@@ -548,7 +555,11 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 #contacto{
     box-shadow: 1px 1px 15px 5px $negro; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
     //background-image: $fondoPrincipal;
-    background-image: $fondoContacto;
+    //background-image: $fondoContacto;
+    //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,167,206,1) 35%, rgba(0,212,255,1) 100%);
+    //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,108,148,1) 35%, rgba(0,212,255,1) 100%);
+
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(242,242,242,1) 0%, rgba(0,212,255,1) 100%);
     form{
         color: $celeste;
         background-color: #F6F1F1;

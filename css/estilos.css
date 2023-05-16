@@ -78,6 +78,9 @@ body table th td {
 body table thead tr {
   background-color: #F6F1F1;
   text-align: left;
+  /*th{
+
+  }*/
 }
 body h3 {
   margin-top: 150px;
@@ -413,7 +416,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 
 /*Fin Grid Leagues*/
 /*PL Posiciones*/
-.tabla_posiciones {
+.tabla_posiciones, .jornadas, .tabla_goleadores {
   width: 40%;
   /*centrado*/
   margin-left: auto;
@@ -423,11 +426,6 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 
 /*Fin PL Posiciones*/
 /*PL Jornadas*/
-.jornadas {
-  display: inline-table;
-  margin-bottom: -20%;
-}
-
 /*Fin PL Jonrnadas*/
 /*Img Zoom*/
 /*Realizo transición suave de la imagen*/
@@ -520,7 +518,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
 /*Contacto*/
 #contacto {
   box-shadow: 1px 1px 15px 5px #000; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
-  background-image: url(../media/background_img/texture_background.jpg);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(242, 242, 242) 0%, rgb(0, 212, 255) 100%);
 }
 #contacto form {
   color: #19A7CE;
@@ -696,7 +694,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   .des_grid {
     margin-top: 150px;
   }
-  .tabla_posiciones {
+  .tabla_posiciones, .tabla_goleadores, .jornadas {
     width: 100%;
   }
   table {
@@ -776,7 +774,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   .des_grid {
     margin-top: 150px;
   }
-  .tabla_posiciones {
+  .tabla_posiciones, .tabla_goleadores, .jornadas {
     width: 100%;
   }
   table {
@@ -852,7 +850,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   .resultados_y_partidos .ryp_titulo {
     font-size: 13px;
   }
-  .tabla_posiciones {
+  .tabla_posiciones, .tabla_goleadores, .jornadas {
     width: 80%;
   }
   table {
@@ -917,7 +915,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   .resultados_y_partidos .ryp_titulo {
     font-size: 14px;
   }
-  .tabla_posiciones {
+  .tabla_posiciones, .tabla_goleadores, .jornadas {
     width: 60%;
   }
   table {
