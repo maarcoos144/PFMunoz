@@ -509,7 +509,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   right: 20%;
   height: 44.9%;
   width: 13%;
-  padding: 10px;
+  /*padding: 10px;*/
   margin-top: 33px; /*Bajo el rectángulo*/
   background-image: url(../media/background_img/children-1822688.jpg);
   box-shadow: 1px 1px 15px 5px #000;
@@ -706,7 +706,15 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   }
   .resultados_y_partidos .ryp_titulo {
     font-size: 10px;
+    text-align: center;
+    margin: 10px;
   }
+
+.resultados_y_partidos ul li{
+    font-size: 10px;
+    text-align: center;
+}
+
   .des_grid {
     margin-top: 150px;
   }
@@ -779,9 +787,18 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
     height: 350px;
     width: 50%;
   }
+
   .resultados_y_partidos .ryp_titulo {
-    font-size: 12px;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px;
   }
+
+.resultados_y_partidos ul li{
+    font-size: 12px;
+    text-align: center;
+}
+
   .grid_text_abajo {
     font-size: 9px;
     grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
@@ -870,8 +887,15 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
     width: 50%;
   }
   .resultados_y_partidos .ryp_titulo {
-    font-size: 13px;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
   }
+
+.resultados_y_partidos ul li{
+    font-size: 13px;
+    text-align: center;
+}
   .tabla_posiciones, .tabla_goleadores, .jornadas {
     width: 80%;
   }
@@ -940,6 +964,17 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   .resultados_y_partidos .ryp_titulo {
     font-size: 14px;
   }
+  .resultados_y_partidos .ryp_titulo {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+  }
+
+ .resultados_y_partidos ul li{
+    font-size: 14px;
+    text-align: center;
+  }
+
   .tabla_posiciones, .tabla_goleadores, .jornadas {
     width: 60%;
   }
