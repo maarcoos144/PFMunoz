@@ -1,0 +1,1025 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Dhurjati&family=Lacquer&display=swap');
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*font-family: 'Delicious Handrawn', cursive;
+font-family: 'Dhurjati', sans-serif;
+font-family: 'Lacquer', cursive;*/
+
+/*
+font-family: define el nombre de la fuente.
+src: define la ruta del archivo y el formato de la fuente.
+font-style: define el estilo de la fuente (normal, italic, oblique).
+font-weight: define el grosor de la fuente (normal, bold, bolder, lighter).
+*/
+
+/*Variables*/
+/*Colores*/
+$fondoPrincipal: url(../media/background_img/jump-1822412.jpg);
+$fondoContacto: url(../media/background_img/texture_background.jpg);
+$negro: #000;
+$celeste: #19A7CE;
+$azul: #146C94;
+$blanco: #f2f2f2; 
+
+/* Estilo del body */
+body {
+    background-image: $fondoPrincipal;
+    header {
+        background-color: $negro;
+        color: #FFF;
+        height: 110px; /*Agrego height*/
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        background-image: $fondoPrincipal;
+        a{
+            h1{
+                font-size: 25px; 
+            }
+            h2{
+                font-size: 25px;
+            }
+        }
+        #header_links{
+            ul{
+                list-style: none;
+                text-align: center;
+        
+                li{
+                    display: inline;
+                    margin-right: 10px;
+                }
+            }
+            a{
+                color: $celeste;
+                font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+                font-size: 16px;
+                text-align: center;
+                font-weight: bold;
+                text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+                text-decoration: none;
+                :hover{
+                    color: $azul;
+                }
+            }
+            a:hover {
+                color: $azul; 
+            }
+            li.separator {
+                border-right: 1px solid $negro;
+            }
+        }
+    }
+    table{
+        th{
+            td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                color: $celeste;
+                margin: auto;
+                margin-top: 20px;
+                margin-bottom: -1400px;
+            }
+        }
+        thead{
+            tr{
+                background-color: #F6F1F1;
+                text-align: left;
+                /*th{
+                    
+                }*/
+            } 
+        }
+    }
+    h3 {
+        margin-top: 150px;
+        color: $celeste;
+        font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+    }
+    div{ 
+        ul{
+        color: $negro;
+        font-weight: bold;
+        text-align: left;
+        list-style-type: none;
+        }
+    }
+}
+
+/*Creo clase para que agregue borde a las img*/
+.imagen_con_borde {
+    border: 1px solid black;
+}
+
+/*Imagen redondeada*/
+.imagen_redondada {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Estilos para el footer */
+footer {
+    justify-content: center; /* centra horizontalmente */
+    background-color: $negro;
+    color: #F6F1F1;
+    padding: 20px;         /*El padding de un elemento es la cantidad de espacio entre el borde y el contenido del elemento*/
+    text-align: center;
+
+    /*Pongo el footer fijo y abajo.*/
+    position: fixed;
+    bottom: 0;
+    width: 68.3%;
+    height: 5%;
+    padding-top: 15px;
+    background-image: $fondoPrincipal;
+    font-weight: bold;
+}
+
+.whatsapp{
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    color: springgreen;
+    position: fixed;
+    right: .8%;
+    bottom: 6%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: .5px 1px 15px 5px $negro;
+}
+
+.whatsapp.hover{
+    background-color: springgreen;
+    color: #000;
+    box-shadow: none;
+}
+
+.titulo {
+    padding-left: 1%;
+    font-family: 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+    color: $celeste;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+    letter-spacing: .5rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.titulo:hover{
+    color: $azul;
+}
+
+/*SlideShow*/
+* {box-sizing:border-box}
+
+/* contenedor*/
+.slideshow-container {
+    display: grid;
+    max-width: 90%;
+    position: relative;
+    z-index: 5;
+    box-shadow: 1px 1px 15px 5px $negro; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
+    cursor: pointer;
+    margin: 0 auto; /*Centro*/
+    margin-top: 125px;
+}
+
+/* Escondo imagenes por def*/
+.mySlides {
+    display: none;
+}
+
+/* Caption text */
+.text {
+    color: $celeste;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+    font-weight: bold;        
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; 
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: $blanco;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    text-shadow: 5px 5px 5px $negro;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 6.0s;
+}
+
+@keyframes fade {
+    from {opacity: .9}
+    to {opacity: 1}
+}
+/*Fin-SlideShow*/
+
+/*Grid noticias*/
+
+@mixin grid-properties{
+    position: absolute; 
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    row-gap: 2rem;
+}
+.grid-container {
+    @include grid-properties;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 12px;
+    font-weight: bold;
+    width: 46%;
+    height: 45%;
+    top: 83%; 
+    text-align: center;
+    padding-bottom: 100px; /* Agrega un padding de 100px al final del contenido. Esto para que el footer no tape el contenido del grid. */
+    margin-left: 80px;
+    box-shadow: 1px 1px 15px 5px $negro;
+    background-color: $azul;
+    background-image: url(../media/background_img/children-1822688.jpg);
+    div {
+        border: 1% solid black;
+        border-radius: 1%;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.grid_text_abajo{
+    font-size: 14px;
+    grid-area: 2/1/3/4; /* Definimos la posición del texto */
+    text-align: center;
+}
+
+/*En este ejemplo, cada imagen y su respectivo texto están envueltos dentro de un div con la clase .grid-item. 
+Luego, se define un grid dentro de cada div utilizando la propiedad display: grid, donde la primera fila es para la imagen 
+y la segunda para el texto. Para posicionar cada div, se utiliza la pseudo-clase nth-child, donde se especifica el índice de cada div
+dentro del grid y se definen las filas y columnas que debe ocupar utilizando las propiedades grid-row y grid-column.*/
+
+@mixin grid-properties-items{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.grid-item{
+    @include grid-properties-items; 
+    margin-left: 22px; 
+    margin-bottom: 25px;
+    /*border: 5px solid yellow;*/ /*para guía*/
+}
+
+.grid-item:hover{
+    cursor: pointer;
+}
+
+/* Definimos la posición de cada div dentro del grid */
+.grid-item:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+} 
+
+.grid-item:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.grid-item:nth-child(3) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+
+.text_left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text_left_two {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+/* Estilo para la clase "text-left" */
+.text_left .text_left_two {
+    font-size: 16px;
+}
+/*Fin Grid noticias*/
+
+/*Grid Leagues*/
+/*Utilizo este grid para mostrar noticias de distintas ligas en pantalla principal, y también para mostrar
+noticias específicas de cada liga en particular. Las propiedades son las mismas.*/
+
+.grid_league-container {
+    @include grid-properties;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 12px;
+    font-weight: bold;
+    width: 60%;
+    height: 108%;
+    top: 130%; 
+    text-align: center; 
+    margin-left: 80px;
+    box-shadow: 1px 1px 15px 5px $negro;
+    background-image: url(../media/background_img/children-1822688.jpg);
+    div {
+        border-radius: 1%;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.grid_text_abajo{
+    font-size: 14px;
+    color: #000;
+    margin: 7px;
+}
+
+/*En este ejemplo, cada imagen y su respectivo texto están envueltos dentro de un div con la clase .grid-item. 
+Luego, se define un grid dentro de cada div utilizando la propiedad display: grid, donde la primera fila es para la imagen 
+y la segunda para el texto. Para posicionar cada div, se utiliza la pseudo-clase nth-child, donde se especifica el índice de cada div
+dentro del grid y se definen las filas y columnas que debe ocupar utilizando las propiedades grid-row y grid-column.*/
+
+.grid_league-item {
+    @include grid-properties-items; 
+    margin-left: 22px; /*Le doy margen para centrar los elementos dentro del grid.*/
+    margin-bottom: 20px;
+}
+
+.grid_league-item:hover{
+    cursor: pointer;
+}
+
+  /* Definimos la posición de cada div dentro del grid */
+.grid_league-item:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+} 
+
+.grid_league-item:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.grid_league-item:nth-child(3) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+  /* Agrega un elemento div con la clase "text-left" en cada celda de la primera columna */
+.grid_league-container div:nth-child(3n-2) {
+    position: relative;
+}
+
+.grid_league-container div:nth-child(3n-2) .text_left {
+    position: absolute;
+    top: 50%;
+    left: -150px; /*Acomodo posición de la primer columna.*/
+}
+
+.grid_league-container div:nth-child(3n-2) .text_left_two {
+    position: absolute;
+    top: 60%;
+    left: -150px; /*Acomodo posición de la primer columna.*/
+}
+
+/* Estilo para la clase "text-left" */
+.text_left, .text_left_two {
+    color: $celeste;
+    font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+    font-size: 16px;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+    font-weight: bold;
+}
+/*Fin Grid Leagues*/
+
+/*PL Posiciones*/
+.tabla_posiciones{
+    width: 40%;
+    /*centrado*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1400px;
+}
+/*Fin PL Posiciones*/
+
+.tabla_goleadores{
+    @extend .tabla_posiciones;
+}
+
+/*PL Jornadas*/
+.jornadas{
+    //display: inline-table;
+    @extend .tabla_posiciones;
+}
+/*Fin PL Jonrnadas*/
+
+/*Img Zoom*/
+/*Realizo transición suave de la imagen*/
+.zoom :not(.text_left):not(.text_left_two) {
+    transition: transform .5s;
+}
+
+/*Doy zoom a las imagenes*/
+.zoom:hover :not(.text_left):not(.text_left_two) {
+    transform: scale(1.08);
+}
+/*Fin Img Zoom*/
+
+/*Jugadores destacados*/
+#jugadores_destacados{
+    display: flex;
+    flex-flow: row wrap; /*Ayudo al responsive.*/
+    width:100%;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: -1500px;   
+    .row{
+    row-gap: 135px;
+    align-items: center;
+    justify-content: center;
+    }
+    .jugador{
+        display: flex;
+        color: black;
+        width: 200px;
+        height: 200px;
+        flex-direction: column;
+        margin: 1px; /*Me sirvió para achicar el espacio entre items*/
+        margin-top: -75px;
+    }
+    .jugador_text{
+        text-align: center;
+        font-weight: bold;
+        color: $celeste;
+        font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+    }
+    .jugador:hover, .jugador_text:hover{
+        cursor: pointer;
+    }
+}
+
+/*Se comenta la descripcoón del jugador porque no lo puedo hacer funcionar bien - PROVISORIO*/
+/* .jugador_text_desc{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+    border: 10px solid;
+    background-color: $celeste;
+    font-weight: bold;
+} */
+
+/* .jugador:hover .jugador_text_desc,
+.jugador_text:hover .jugador_text_desc{
+    opacity: 1; */
+    /*
+    .jugador:hover .jugador_text_desc: Esta regla aplica un estilo al elemento con la clase .jugador_text_desc cuando se pasa el mouse por 
+    encima del elemento con la clase .jugador. Esto significa que cuando el mouse está sobre
+    el contenedor con la clase .jugador, se cambia la opacidad del elemento con la clase .jugador_text_desc a 1, lo que lo hace visible.
+    */
+/* }  
+/*Fin - Se comenta la descripcoón del jugador porque no lo puedo hacer funcionar bien*/
+/*Fin - Jugadores destacados*/
+
+/*Resultados y partidos*/
+/*Clase con últimos resultados y próximos partidos.*/
+.resultados_y_partidos {
+    position: absolute;
+    top: 79.7%; 
+    right: 20%; 
+    height: 44.9%;
+    width: 13%;
+    padding: 0.5px;
+    margin-top: 33px; /*Bajo el rectángulo*/
+    background-image: url(../media/background_img/children-1822688.jpg);
+    box-shadow: 1px 1px 15px 5px $negro;    
+    .ryp_titulo{
+        color: $celeste;
+        font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+    }
+}
+/*Fin - resultados y partidos*/
+
+/*Contacto*/
+#contacto{
+    box-shadow: 1px 1px 15px 5px $negro; /*ANCHO,ALTO, RADIO DE SOMBRA, RADIO DE PROPAGACIÓN*/
+    //background-image: $fondoPrincipal;
+    //background-image: $fondoContacto;
+    //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,167,206,1) 35%, rgba(0,212,255,1) 100%);
+    //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,108,148,1) 35%, rgba(0,212,255,1) 100%);
+
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(242,242,242,1) 0%, rgba(0,212,255,1) 100%);
+    form{
+        color: $celeste;
+        background-color: #F6F1F1;
+        font-size: 16px;
+        padding: 5px;         /*El padding de un elemento es la cantidad de espacio entre el borde y el contenido del elemento*/
+        text-align: center;
+        width: 40%;
+        height: 505px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border: solid;
+        margin:auto;
+        margin-top:  1550px;
+        margin-bottom:  60px;
+        background-image: $fondoPrincipal;
+        h1{
+            color: $celeste;
+            font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 2px 0 0 #030303, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+        }
+        label{
+            display: block; 
+            float: center;  
+            font-weight: bold;
+            font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+        }
+        textarea{
+            margin-left: 50px; 
+            border-radius: 5px;  
+            border-style: solid; 
+            border-width: 1px; 
+            border-color: $celeste; 
+            width: 80%; 
+            height: 150px; 
+            margin-top: 10px;  
+            padding-left: 10px;
+            margin-bottom: 20px; 
+            padding-top: 15px; 
+            margin-left: auto; /*Centrado*/
+            font-weight: bold;
+            font-size: 16px;
+        }
+        input{
+            border-radius: 5px;  
+            border-style: solid; 
+            margin-left: 50px;
+            font-size: 16px;
+            width: 80%;
+            margin-left: auto; /*Centrado*/
+            font-weight: bold;
+        }
+
+        .submit_button{
+            color: $celeste;
+            padding: 1%;
+            width: 20%;
+            border-radius: 50px;
+            font-weight: bold;
+            font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif ;
+            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+            margin-left: auto; /*Centrado*/
+        }
+        
+        .submit_button:hover{
+            color: $celeste;
+            background-color: black;
+        }
+    }
+}
+/*Fin Contacto*/
+
+/*Desarrollador*/
+.des_grid{
+    display: grid;
+    grid-template-columns: 200px; /*ancho de las columnas*/
+    grid-template-rows: 200px;    /*altura de las columnas*/
+    justify-content: center;
+    box-shadow: 1px 1px 1000px 100px $negro;
+    border-radius: 1%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+    margin-top: 120px;
+    margin-bottom: -1400px; /*Quito espacio del grid para que "Contacto" se suba. Aplico esto en todas los html.*/
+    .des_grid_item{
+        justify-self: center; /*horizontal*/
+        align-self: center;   /*vertical*/
+        background-color: $celeste;
+        background-image: url(../media/desarrollador/img/marcos.jpg);
+        width: 100%; /* La imagen ocupa el ancho completo del contenedor */
+        height: 100%; /* La altura ocupa el alto completo del contenedor */
+        cursor: pointer;
+        box-shadow: 1px 1px 1000px 30px $celeste; 
+        border-radius: 50%;
+        border: solid;
+        border-color: $negro;
+    }
+    
+    .des_grid_text{
+        text-align: center;
+        font-weight: bold;
+        color: $negro;
+        cursor: pointer;
+    }
+    
+    .text_des{
+        text-align: center;
+        font-family: 'Lacquer', cursive, 'Delicious Handrawn', cursive, Arial, Italic, Calibri, sans-serif;
+        color: $celeste;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+    }
+}
+/*Fin desarrollador*/
+
+/*Media querys*/
+@media screen and (min-width: 1px) and (max-width: 368px) { /*Mobile*/    
+    body header a h1, body header a h2{ /*Para el título*/
+        font-size: 7px;
+    }
+
+    body {
+        header {
+            #header_links{
+                a{
+                    font-size: 8px;
+                    }
+                }
+        }
+    }
+
+    .slideshow-container{
+        margin-top: 160px;
+        width: 100%;
+    }
+    .text{
+        font-size: 9px;
+    }
+
+    .grid-container {
+        width: 90%;
+        left: 5%;
+        top: 380px;
+        row-gap: 0rem;
+        height: 250px;
+        margin-left: 0px;
+    }
+    .grid-item{
+        margin-left: -1px; 
+    }
+    .grid_league-container {
+        width: 72%;
+        left: 80px;
+        top: 700px;
+        row-gap: 0rem;
+        height: 600px;
+        margin-left: 0px;
+    }
+    .text_left, .text_left_two{
+        font-size: 10px;
+        margin-left: 80px;
+    }
+    .grid_league-item{
+        margin-left: -1px; 
+        height: 120px;
+    }
+
+    .grid_text_abajo{
+        font-size: 9px;
+        grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
+        text-align: center;
+    }
+    .text_left, .text_left_two, .numbertext{
+        font-size: 7px;
+    }
+
+    .resultados_y_partidos {
+        top: 1350px; 
+        right: 13%; 
+        height: 350px;
+        width: 70%;
+        .ryp_titulo{
+            font-size: 11px;
+        }
+    }
+    
+    .des_grid{
+        margin-top: 150px;
+    }
+    .tabla_posiciones{
+        width: 100%;
+    }
+    table{
+        font-size: 7px;
+    }
+    body h3 {
+        font-size: 9px;
+    }
+    .jugador_text{
+        font-size: 10px;
+    }
+    footer{
+        left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+    #contacto{
+        form{
+            width: 100%;
+        }
+    }
+}
+@media screen and (min-width: 369px) and (max-width: 576px) { /*Mobile*/
+    body header a h1, body header a h2{ /*Para el título*/
+        font-size: 8px;
+    }
+    body {
+        header {
+            #header_links{
+                a{
+                    font-size: 7px;
+                    }
+                }
+        }
+    }
+    .slideshow-container{
+        margin-top: 160px;
+        width: 100%;
+    }
+    .text{
+        font-size: 10px;
+    }
+    .grid-container {
+        width: 90%;
+        left: 5%;
+        top: 550px;
+        row-gap: 0rem;
+        height: 270px;
+        margin-left: 0px;
+    }
+    .grid-item{
+        margin-left: -1px; 
+    }
+    .grid_league-container {
+        width: 75%;
+        left: 80px;
+        top: 850px;
+        row-gap: 0rem;
+        height: 600px;
+        margin-left: 0px;
+        align-content: center;
+    }
+    .text_left, .text_left_two{
+        font-size: 10px;
+        margin-left: 80px;
+    }
+    .grid_league-item{
+        margin-left: -1px; 
+        height: 120px;
+    }
+
+    .resultados_y_partidos {
+        top: 1450px; 
+        right: 20%; 
+        height: 350px;
+        width: 50%;
+        .ryp_titulo{
+            font-size: 12px;
+        }
+    }
+
+    .grid_text_abajo{
+        font-size: 9px;
+        grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
+        text-align: center;
+    }
+    .text_left, .text_left_two{
+        font-size: 8px;
+    }
+    .des_grid{
+        margin-top: 150px;
+    }
+    .tabla_posiciones{
+        width: 100%;
+    }
+    table{
+        font-size: 9px;
+    }
+    body h3 {
+        font-size: 11px;
+    }
+    .jugador_text{
+        font-size: 11px;
+    }
+    footer{
+        left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+    #contacto{
+        form{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px){ /*Tablets en vertical*/
+    body header a h1, body header a h2{ /*Para el título*/
+        font-size: 9px;
+    }
+
+    body {
+        header {
+            #header_links{
+                a{
+                    font-size: 8px;
+                    }
+                }
+        }
+    }
+    
+    .slideshow-container{
+        margin-top: 160px;
+        width: 100%;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .des_grid{
+        margin-top: 180px;
+    }
+    .grid-container {
+        width: 90%;
+        left: 5%;
+        top: 550px;
+        row-gap: 0rem;
+        height: 300px;
+        margin-left: 0px;
+    }
+    .grid-item{
+        margin-left: -1px; 
+    }
+    .grid_league-container {
+        width: 81%;
+        left: 80px;
+        top: 900px;
+        row-gap: 1rem;
+        height: 600px;
+        margin-left: 0px;
+    }
+    .grid_league-item{
+        margin-left: -1px; 
+        height: 120px;
+    }
+    .grid_text_abajo{
+        font-size: 10px;
+        grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
+        text-align: center;
+    }
+    .text_left, .text_left_two{
+        font-size: 10px;
+        margin-left: 80px;
+    }
+    .resultados_y_partidos {
+        top: 1500px; 
+        right: 20%; 
+        height: 350px;
+        width: 50%;
+        .ryp_titulo{
+            font-size: 13px;
+        }
+    }
+    .tabla_posiciones{
+        width: 80%;
+    }
+    table{
+        font-size: 11px;
+    }
+    body h3 {
+        font-size: 13px;
+    }
+    .jugador_text{
+        font-size: 12px;
+    }
+    footer{
+        left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+    #contacto{
+        form{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){ /*Tablets en horizontal*/
+    body header a h1, body header a h2{ /*Para el título*/
+        font-size: 12px;
+    }
+    #header_links a{
+        font-size: 10px;
+    }
+    .des_grid{
+        margin-top: 180px;
+    }
+    .grid-container {
+        width: 90%;
+        left: 5%;
+        top: 550px;
+        row-gap: 0rem;
+        height: 270px;
+        margin-left: 0px;
+    }
+    .grid-item{
+        margin-left: -1px; 
+    }
+    .grid_league-container {
+        width: 90%;
+        left: 5%;
+        top: 850px;
+        row-gap: 0rem;
+        height: 700px;
+        margin-left: 0px;
+    }
+    .grid_league-item{
+        margin-left: -1px; 
+        height: 120px;
+    }
+    .grid_text_abajo{
+        font-size: 10px;
+        grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
+        text-align: center;
+    }
+    .resultados_y_partidos {
+        top: 1600px; 
+        right: 20%; 
+        height: 350px;
+        width: 50%;
+        .ryp_titulo{
+            font-size: 14px;
+        }
+    }
+    .tabla_posiciones{
+        width: 60%;
+    }
+    table{
+        font-size: 13px;
+    }
+    body h3 {
+        font-size: 15px;
+    }
+    .jugador_text{
+        font-size: 13px;
+    }
+    footer{
+        left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+}
