@@ -237,7 +237,7 @@ footer {
 
 @keyframes fade {
   from {
-    opacity: 0.9;
+    opacity: 1;
   }
   to {
     opacity: 1;
@@ -248,7 +248,7 @@ footer {
 .grid-container {
   position: absolute;
   display: grid;
-  padding: 1rem;
+  padding: 0.5rem;
   grid-gap: 1rem;
   row-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
@@ -312,20 +312,18 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 }
 
 .text_left {
-  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
 }
 
 .text_left_two {
-  position: absolute;
   top: 60%;
-  transform: translateY(-50%);
 }
 
 /* Estilo para la clase "text-left" */
-.text_left .text_left_two {
+.text_left, .text_left_two {
+  position: absolute;
   font-size: 16px;
+  transform: translateY(-50%);
 }
 
 /*Fin Grid noticias*/
@@ -411,7 +409,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 }
 
 /* Estilo para la clase "text-left" */
-.text_left, .text_left_two :not(.zoom) 
+.text_left, .text_left_two
 {
   color: #19A7CE;
   /*font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
@@ -671,7 +669,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
     left: 5%;
     top: 380px;
     row-gap: 0rem;
-    height: 250px;
+    height: 270px;
     margin-left: 0px;
   }
   .grid-item {
@@ -698,14 +696,14 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
     grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
     text-align: center;
   }
-  .text_left, .text_left_two, .numbertext {
+  .numbertext {
     font-size: 7px;
   }
   .resultados_y_partidos {
     top: 1350px;
-    right: 13%;
-    height: 350px;
-    width: 70%;
+    right: 22%;
+    height: 250px;
+    width: 50%;
   }
   .resultados_y_partidos .ryp_titulo {
     font-size: 10px;
@@ -715,7 +713,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
 
 .resultados_y_partidos ul li{
     font-size: 10px;
-    text-align: center;
+    /*text-align: left;*/
 }
 
   .des_grid {
@@ -759,9 +757,9 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   .grid-container {
     width: 90%;
     left: 5%;
-    top: 550px;
+    top: 400px;
     row-gap: 0rem;
-    height: 270px;
+    height: 280px;
     margin-left: 0px;
   }
   .grid-item {
@@ -770,7 +768,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   .grid_league-container {
     width: 75%;
     left: 80px;
-    top: 850px;
+    top: 750px;
     row-gap: 0rem;
     height: 600px;
     margin-left: 0px;
@@ -785,9 +783,9 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
     height: 120px;
   }
   .resultados_y_partidos {
-    top: 1450px;
+    top: 1400px;
     right: 20%;
-    height: 350px;
+    height: 250px;
     width: 50%;
   }
 
@@ -799,16 +797,13 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
 
 .resultados_y_partidos ul li{
     font-size: 12px;
-    text-align: center;
+    /*text-align: center;*/
 }
 
   .grid_text_abajo {
     font-size: 9px;
     grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
     text-align: center;
-  }
-  .text_left, .text_left_two {
-    font-size: 8px;
   }
   .des_grid {
     margin-top: 150px;
