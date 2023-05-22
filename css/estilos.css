@@ -670,7 +670,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   }
   .grid_league-container {
     width: 72%;
-    left: 80px;
+    left: 70px;
     top: 700px;
     row-gap: 0rem;
     height: 600px;
