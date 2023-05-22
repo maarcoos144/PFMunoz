@@ -323,7 +323,11 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 .text_left, .text_left_two {
   position: absolute;
   font-size: 16px;
-  transform: translateY(-50%);
+  color: #19A7CE;
+  /*font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 2px 0 0 #000, -1px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
+  font-weight: bold;
 }
 
 /*Fin Grid noticias*/
@@ -406,17 +410,6 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
   position: absolute;
   top: 60%;
   left: -150px; /*Acomodo posición de la primer columna.*/
-}
-
-/* Estilo para la clase "text-left" */
-.text_left, .text_left_two
-{
-  color: #19A7CE;
-  /*font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 16px;
-  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
-  font-weight: bold;
 }
 
 /*Fin Grid Leagues*/
@@ -505,7 +498,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   top: 84.5%;
   right: 20%;
   height: 45.9%;
-  width: 13%;
+  width: 12%;
   /*padding: 10px;*/
   margin-top: 33px; /*Bajo el rectángulo*/
   background-image: url(../media/background_img/children-1822688.jpg);
