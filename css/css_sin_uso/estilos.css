@@ -37,7 +37,6 @@ body header {
 }
 body header a h1 {
   font-size: 25px;
-  font-weight: bold;
 }
 body header a h2 {
   font-size: 25px;
@@ -52,9 +51,7 @@ body header #header_links ul li {
 }
 body header #header_links a {
   color: #19A7CE;
- /* font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-/*font-family: 'Courier New', Courier, monospace;*/
-  font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;
   font-size: 16px;
   text-align: center;
   font-weight: bold;
@@ -88,8 +85,7 @@ body table thead tr {
 body h3 {
   margin-top: 150px;
   color: #19A7CE;
-  /*font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;
   font-size: 30px;
   text-align: center;
   font-weight: bold;
@@ -145,7 +141,7 @@ footer {
   box-shadow: 0.5px 1px 15px 5px #000;
 }
 
-.whatsapp:hover {
+.whatsapp.hover {
   background-color: springgreen;
   color: #000;
   box-shadow: none;
@@ -153,9 +149,7 @@ footer {
 
 .titulo {
   padding-left: 1%;
-  /*font-family: "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-  /*font-family: 'Courier New', Courier, monospace;*/
-  font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;
   color: #19A7CE;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
   letter-spacing: 0.5rem;
@@ -198,8 +192,7 @@ footer {
   bottom: 8px;
   width: 100%;
   text-align: center;
-  /*font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
@@ -259,10 +252,10 @@ footer {
   font-weight: bold;
   width: 46%;
   height: 45%;
-  top: 88%;
+  top: 83%;
   text-align: center;
   padding-bottom: 100px; /* Agrega un padding de 100px al final del contenido. Esto para que el footer no tape el contenido del grid. */
-  margin-left: 78px;
+  margin-left: 80px;
   box-shadow: 1px 1px 15px 5px #000;
   background-color: #146C94;
   background-image: url(../media/background_img/children-1822688.jpg);
@@ -345,8 +338,8 @@ noticias específicas de cada liga en particular. Las propiedades son las mismas
   font-size: 12px;
   font-weight: bold;
   width: 60%;
-  height: 118%;
-  top: 135%;
+  height: 108%;
+  top: 130%;
   text-align: center;
   margin-left: 80px;
   box-shadow: 1px 1px 15px 5px #000;
@@ -415,8 +408,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 /* Estilo para la clase "text-left" */
 .text_left, .text_left_two {
   color: #19A7CE;
-  /*font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;
   font-size: 16px;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
   font-weight: bold;
@@ -424,7 +416,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
 
 /*Fin Grid Leagues*/
 /*PL Posiciones*/
-.tabla_posiciones, .jornadas, .tabla_goleadores { /*el HTML asistentes utiliza la clase .tabla_goleadores*/
+.tabla_posiciones, .jornadas, .tabla_goleadores {
   width: 40%;
   /*centrado*/
   margin-left: auto;
@@ -474,8 +466,7 @@ dentro del grid y se definen las filas y columnas que debe ocupar utilizando las
   text-align: center;
   font-weight: bold;
   color: #19A7CE;
-  /*font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
 }
 #jugadores_destacados .jugador:hover, #jugadores_destacados .jugador_text:hover {
@@ -505,19 +496,18 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
 /*Clase con últimos resultados y próximos partidos.*/
 .resultados_y_partidos {
   position: absolute;
-  top: 84.5%;
+  top: 79.7%;
   right: 20%;
   height: 44.9%;
   width: 13%;
-  /*padding: 10px;*/
+  padding: 0.5px;
   margin-top: 33px; /*Bajo el rectángulo*/
   background-image: url(../media/background_img/children-1822688.jpg);
   box-shadow: 1px 1px 15px 5px #000;
 }
 .resultados_y_partidos .ryp_titulo {
   color: #19A7CE;
-  /*font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;
   font-size: 20px;
   text-align: center;
   font-weight: bold;
@@ -538,18 +528,16 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   text-align: center;
   width: 40%;
   height: 505px;
-  /*font-family: Georgia, "Times New Roman", Times, serif;*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Georgia, "Times New Roman", Times, serif;
   border: solid;
   margin: auto;
-  margin-top: 1700px;
+  margin-top: 1550px;
   margin-bottom: 60px;
   background-image: url(../media/background_img/jump-1822412.jpg);
 }
 #contacto form h1 {
   color: #19A7CE;
-  /*font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;
   font-size: 30px;
   text-align: center;
   font-weight: bold;
@@ -559,8 +547,7 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   display: block;
   float: center;
   font-weight: bold;
-  /*font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
 }
 #contacto form textarea {
@@ -591,11 +578,10 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
 #contacto form .submit_button {
   color: #19A7CE;
   padding: 1%;
-  width: 50%;
+  width: 20%;
   border-radius: 50px;
   font-weight: bold;
-  /*: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
   margin-left: auto; /*Centrado*/
 }
@@ -640,11 +626,9 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
 }
 .des_grid .text_des {
   text-align: center;
-  /*font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;*/
-  font-family: 'Courier New', Courier, monospace;
-  color: #000;
- /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;*/ /*Doy borde al texto*/
- font-weight: bold;
+  font-family: "Lacquer", cursive, "Delicious Handrawn", cursive, Arial, Italic, Calibri, sans-serif;
+  color: #19A7CE;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /*Doy borde al texto*/
 }
 
 /*Fin desarrollador*/
@@ -705,16 +689,8 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
     width: 70%;
   }
   .resultados_y_partidos .ryp_titulo {
-    font-size: 10px;
-    text-align: center;
-    margin: 10px;
+    font-size: 11px;
   }
-
-.resultados_y_partidos ul li{
-    font-size: 10px;
-    text-align: center;
-}
-
   .des_grid {
     margin-top: 150px;
   }
@@ -787,18 +763,9 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
     height: 350px;
     width: 50%;
   }
-
   .resultados_y_partidos .ryp_titulo {
-    font-size: 14px;
-    text-align: center;
-    margin: 10px;
-  }
-
-.resultados_y_partidos ul li{
     font-size: 12px;
-    text-align: center;
-}
-
+  }
   .grid_text_abajo {
     font-size: 9px;
     grid-area: 2/1/3/1; /* Definimos la posición del texto */ /*Ej: Make "item1" start on row 2 column 1, and span 2 rows and 3 columns:*/
@@ -887,15 +854,8 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
     width: 50%;
   }
   .resultados_y_partidos .ryp_titulo {
-    font-size: 15px;
-    text-align: center;
-    margin: 10px;
-  }
-
-.resultados_y_partidos ul li{
     font-size: 13px;
-    text-align: center;
-}
+  }
   .tabla_posiciones, .tabla_goleadores, .jornadas {
     width: 80%;
   }
@@ -964,17 +924,6 @@ el contenedor con la clase .jugador, se cambia la opacidad del elemento con la c
   .resultados_y_partidos .ryp_titulo {
     font-size: 14px;
   }
-  .resultados_y_partidos .ryp_titulo {
-    font-size: 16px;
-    text-align: center;
-    margin: 10px;
-  }
-
- .resultados_y_partidos ul li{
-    font-size: 14px;
-    text-align: center;
-  }
-
   .tabla_posiciones, .tabla_goleadores, .jornadas {
     width: 60%;
   }
